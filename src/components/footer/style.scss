@@ -6,7 +6,7 @@ footer.footer {
     padding: 125px 0 45px 0;
     .selfsite {
         width: calc(100% - 60px);
-        background-image: linear-gradient(to right top, #c74ec7, #b958d6, #a762e4, #916cf0, #7575fb);
+        background: linear-gradient(90deg, #E9088E 1.91%, #7C3AED 97.13%);
         margin: auto;
         text-align: center;
         border-radius: 20px;
@@ -23,7 +23,7 @@ footer.footer {
             p {
                 font-size: 20px;
                 line-height: 28px;
-                font-family: 'PlusJakartaSans-Medium';
+                font-family: 'Inter-Medium';
                 margin: 35px 0;
             }
             button.whitebtn.btn.btn-primary {
@@ -37,55 +37,42 @@ footer.footer {
                 width: 100%;
                 font-family: 'PlusJakartaSans-SemiBold';
                 padding: 16px 10px;
+                img {
+                    margin-left: 10px;
+                }
             }    
         }
     }
     .logo_wrapper {
-        p {
-            color: #fff;
-            font-family: 'PlusJakartaSans-Regular';
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 10px;
-        }
+        margin-bottom: 20px;
     }
-    .contact_info {
-        margin-top: 66px;
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-            font-family: 'PlusJakartaSans-Medium';
-        }
-    }
-    h4 {
-        font-size: 16px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #fff;
-        font-family: 'PlusJakartaSans-SemiBold';
-    }
+
     .footerMenu {
         ul {
             padding: 0;
             list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
             li {
                 padding: 10px 0;
                 a {
-                    color: #fff;
+                    color: #000000;
                     text-decoration: none;
                     font-size: 14px;
-                    font-family: 'PlusJakartaSans-Medium';
+                    font-family: 'Inter-Medium';
                 }
             }
         }
     }
     .copyright {
         p {
-            color: #fff;
+            color: #000000;
             margin-bottom: 0;
             font-size: 14px;
-            font-family: 'PlusJakartaSans-Medium';
+            font-family: 'Inter-Medium';
         }
     }
 }
@@ -107,11 +94,44 @@ footer.footer {
             }
         }
     }
+    footer.footer  {
+        .selfsite {
+            .selfsite_inner {
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .footerMenu {
+            ul {
+                margin-bottom: 0px;
+                gap: 10px;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            ul.socialMenu {
+                flex-direction: row;
+            }
+        }
+        .copyright {
+            margin: 40px 0;
+            p {
+                text-align: left;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 767px) {
     footer.footer {
         padding-top: 0;
         .logo_wrapper {
+            text-align: left;
+            margin-bottom: 0px;
             a {
                 img {
                     max-width: fit-content;
@@ -160,8 +180,8 @@ footer.footer {
         .footerMenus {
             margin-top: 45px;
         }
-        .contact_info, .footerMenu {
-            margin-top: 44px;
+        .footerMenu {
+            margin-top: 25px;
         }
         .footerMenu {
             ul {

@@ -1,0 +1,38 @@
+.tab-content {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  // padding: 35px;
+  h5 {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Inter-Bold";
+  }
+  h2 {
+    font-size: 52px;
+    line-height: 62px;
+    color: #000000;
+    font-family: "Inter-Bold";
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    font-family: "Inter-Medium";
+  }
+  a.learnmore {
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    font-family: "Inter-Bold";
+    color: #111827;
+    img {
+      margin-left: 15px;
+    }
+  }
+  .fullImage {
+    img {
+      border-radius: 12px;
+    }
+  }
+}

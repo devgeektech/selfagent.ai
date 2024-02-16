@@ -1,0 +1,31 @@
+.dashboardPage {
+    background: #212529;
+    .sidebar_page-content {
+        display: flex;
+        width: 100%;
+        .sidebarWrapper {
+            max-width: 400px;
+            width: 100%;
+        }
+        .page-content {
+            width: 100%;
+            .url-bar {
+                padding: 30px 20px 30px 20px;
+                button.refreshBtn {
+                    background: transparent;
+                    border: none;
+                }
+                input.form-control {
+                    height: 58px;
+                    border-radius: 12px;
+                    border: 1px solid #BFBFBF;
+                    box-shadow: none;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+footer.footer {
+    display: none;
+}

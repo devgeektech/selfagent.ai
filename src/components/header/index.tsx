@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import "./style.scss";
 import logo from "../../assets/images/logo.svg";
+import loginIcon from "../../assets/images/loginIcon.svg";
 // import Signin from "../signin";
 import {
   Button,
@@ -34,15 +35,16 @@ const openReset=()=>{
   return (
     <>
       <header className="header">
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-white">
           <Container>
             <Navbar.Brand href="#">
               <Image src={logo} alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-              <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-                <Nav.Link href="#action1">Product</Nav.Link>
+              <Nav className="my-2 my-lg-0" navbarScroll>
+                <Nav.Link href="#action1">Affiliates</Nav.Link>
+                <Nav.Link href="#action1">Pricing</Nav.Link>
                 <NavDropdown title="Resources" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#action3">
                     Resources 1
@@ -54,19 +56,24 @@ const openReset=()=>{
                     Resources 3
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Tools" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Tools 1</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Tools 2</NavDropdown.Item>
-                  <NavDropdown.Item href="#action5">Tools 3</NavDropdown.Item>
-                </NavDropdown>
               </Nav>
               <div className="btns_wrap">
-                <Button variant="btnSecondary" onClick={signfun}>
-                  Sign In
+                <Button variant="btnSecondary" 
+                // onClick={signfun}
+                >
+                  Sign In <Image src={loginIcon} alt='loginIcon'/>
                 </Button>
-                <Button className="btnprimary">Build Your Site</Button>
+                <Button className="btnprimary">Try for Free</Button>
               </div>
             </Navbar.Collapse>
+              <div className="btns_wrap">
+                <Button variant="btnSecondary" 
+                // onClick={signfun}
+                >
+                  Sign In <Image src={loginIcon} alt='loginIcon'/>
+                </Button>
+                <Button className="btnprimary">Try for Free</Button>
+              </div>
           </Container>
         </Navbar>
       </header>
