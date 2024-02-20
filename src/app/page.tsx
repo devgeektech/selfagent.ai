@@ -29,6 +29,10 @@ import integrationImg from "../assets/images/integrationImg.png";
 import integrationImgMobile from "../assets/images/integrationImgMobile.png";
 import userIcon from "../assets/images/userIcon.png";
 import starIcon from "../assets/images/starIcon.svg";
+import yahoo from "../assets/images/yahoo.png";
+import bloomberg from "../assets/images/bloomberg.png";
+import forbes from "../assets/images/forbes.png";
+import nbc from "../assets/images/nbc.png";
 import { Button, Form, Tab, Tabs } from "react-bootstrap";
 import "./style.scss";
 import Link from "next/link";
@@ -41,7 +45,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/css/navigation';
 import "swiper/css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 // import "swiper/css/pagination";
 // import { Pagination } from "swiper/modules";
 
@@ -82,11 +86,77 @@ export default function () {
             <div className="col-md-6">
               <div className="videoWrapper">
                 <Image
-                  className="w-100 h-auto"
+                  className="h-auto"
                   src={bannerVideo}
                   alt="bannerVideo"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="logosWrapper">
+        <div className="container">
+          <h3 className="text-center"><span>See our news coverage</span></h3>
+          <div className="row">
+            <div className="col-sm-12">
+            <Swiper  modules={[Navigation, Autoplay]}
+                  slidesPerView={4}
+                  spaceBetween={20}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  className="logoSwiper"
+                  breakpoints={{
+                    // when window width is >= 640px
+                    100: {
+                      slidesPerView: 1,
+                    },
+                    // when window width is >= 768px
+                    768: {
+                      width: 768,
+                      slidesPerView: 2,
+                      spaceBetween:"10px"
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween:"20px"
+                    },
+                    1920: {
+                      slidesPerView: 4,
+                      spaceBetween:"20px"
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={yahoo} alt='yahoo'/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={bloomberg} alt='bloomberg'/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={forbes} alt='forbes'/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={nbc} alt='nbc'/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={yahoo} alt='yahoo'/>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
             </div>
           </div>
         </div>
