@@ -1,7 +1,7 @@
 section.smartAi_section {
     padding: 40px 0;
     h1 {
-        font-size: 58px;
+        font-size: 52px;
         font-weight: 600;
         line-height: 55px;
         letter-spacing: 0em;
@@ -20,7 +20,7 @@ section.smartAi_section {
         text-align: left;
         color: #18181B;
         font-family: 'Inter-Medium';
-        margin: 10px 0;
+        margin: 25px 0;
     }
     p {
         font-size: 18px;
@@ -202,7 +202,7 @@ section.tabs_section {
             }
         }
         .tab-content {
-            padding: 60px 60px 60px 120px;
+            padding: 60px 50px 60px 50px;
             .fullImage {
                 img {
                     height: auto;
@@ -1116,6 +1116,7 @@ section.slider_section {
                     font-size: 22px;
                     line-height: 30px;
                     margin-bottom: 10px;
+                    letter-spacing: normal;
                     br {
                         display: none;
                     }

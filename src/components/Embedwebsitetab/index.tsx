@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import "./style.scss";
 import learnmoreIcon from "../../assets/images/learnmoreIcon.svg";
-import tabImage from "../../assets/images/tabImage.jpg";
+import tabEmbed from "../../assets/images/tabEmbed.png";
 import Link from "next/link";
 
 function Embedwebsitetab() {
@@ -13,8 +13,8 @@ function Embedwebsitetab() {
         <div className="row align-items-center">
           <div className="col-md-5">
             <div className="content-tab-left">
-              <h2>Import your <br/> data</h2>
-              <p>Effortlessly integrate and enhance your system with our Chatbot AI. Streamline processes by importing your data seamlessly, empowering the chatbot to provide personalized and efficient interactions, creating a more intuitive and responsive user experience.
+              <h2>Embed on your <br/> Website</h2>
+              <p>Add the AI agent to any website with a simple embed code
               </p>
               <Link className="learnmore" href={"/"}>
                 Learn more
@@ -24,7 +24,7 @@ function Embedwebsitetab() {
           </div>
           <div className="col-md-7">
             <div className="fullImage">
-              <Image className="w-100" src={tabImage} alt="tabImage" />
+              <Image className="w-100" src={tabEmbed} alt="tabEmbed" />
             </div>
           </div>
         </div>

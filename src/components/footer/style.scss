@@ -45,6 +45,10 @@ footer.footer {
     }
     .logo_wrapper {
         margin-bottom: 20px;
+        img {
+            max-width: 260px;
+            height: auto;
+        }
     }
 
     .footerMenu {
@@ -132,11 +136,11 @@ footer.footer {
         .logo_wrapper {
             text-align: left;
             margin-bottom: 0px;
-            a {
-                img {
-                    max-width: fit-content;
-                }
-            }
+            // a {
+            //     img {
+            //         max-width: fit-content;
+            //     }
+            // }
         }
         .container.trySelf {
             padding-left: 0;

@@ -20,9 +20,9 @@ export default function footer() {
           <div className="col-sm-12">
             <div className="selfsite">
               <div className="selfsite_inner">
-                <h2>Join the future of AI chatbots today</h2>
+                <h2>Join the future of AI Agents today</h2>
                 <p>
-                  Embrace tomorrow's AI revolution! Join the forefront of chatbot innovation today<br/> and experience the future of seamless communication
+                  Embrace tomorrow's AI revolution! Join the forefront of AI Agent innovation today<br/> and experience the future of seamless communication
                 </p>
                 <Button className="whitebtn"><span>Try for Free</span>
                   <Image src={arrowRightGradientIcon} alt='arrowRightGradientIcon'/>

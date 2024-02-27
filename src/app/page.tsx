@@ -28,11 +28,16 @@ import chatbotsImg from "../assets/images/chatbotsImg.png";
 import integrationImg from "../assets/images/integrationImg.png";
 import integrationImgMobile from "../assets/images/integrationImgMobile.png";
 import userIcon from "../assets/images/userIcon.png";
+import userIcon_2 from "../assets/images/userIcon_2.png";
+import userIcon_3 from "../assets/images/userIcon_3.png";
+import userIcon_4 from "../assets/images/userIcon_4.png";
 import starIcon from "../assets/images/starIcon.svg";
 import yahoo from "../assets/images/yahoo.png";
 import bloomberg from "../assets/images/bloomberg.png";
 import forbes from "../assets/images/forbes.png";
 import nbc from "../assets/images/nbc.png";
+import languageGradientIcon from "../assets/images/languageGradientIcon.svg";
+import languageWhiteIcon from "../assets/images/languageWhiteIcon.svg";
 import { Button, Form, Tab, Tabs } from "react-bootstrap";
 import "./style.scss";
 import Link from "next/link";
@@ -69,7 +74,7 @@ export default function () {
                 </p>
                 <div className="d-flex mt-4">
                   <button className="btnprimary chatbotBtn">
-                    Build your Chatbot{" "}
+                  Build your AI Agent{" "}
                     <Image
                       src={arrowRightWhiteIcon}
                       alt="arrowRightWhiteIcon"
@@ -232,8 +237,7 @@ export default function () {
               <div className="content_width">
                 <h4>HOW IT WORKS</h4>
                 <p>
-                  SiteAgent is not just another chatbot. It's a leap forward in
-                  digital customer engagement, combining the latest AI
+                  SiteAgent is a leap forward in digital customer engagement, combining the latest AI
                   technology with the nuanced touch of human-like conversation.
                   Our platform is designed to seamlessly integrate with your
                   website, providing your customers with an intelligent,
@@ -281,7 +285,7 @@ export default function () {
                 <span>Benefits</span>
               </h2>
               <p>
-                Everything you need for your no-code AI chatbot is provided.
+                Everything you need for your no-code AI Agent is provided.
               </p>
             </div>
           </div>
@@ -407,7 +411,7 @@ export default function () {
                 <span>POWERFUL FEATURES</span>
               </h2>
               <p>
-                Everything you need for your no-code AI chatbot is provided.
+                Everything you need for your no-code AI Agent is provided.
               </p>
             </div>
           </div>
@@ -523,6 +527,26 @@ export default function () {
                 </p>
               </div>
             </div>
+            <div className="col-sm-4 mb-4">
+              <div className="pwerful_block">
+                <div className="feature_icon">
+                  <Image
+                    className="gradient_icon"
+                    src={languageGradientIcon}
+                    alt="languageGradientIcon"
+                  />
+                  <Image
+                    className="white_icon"
+                    src={languageWhiteIcon}
+                    alt="languageWhiteIcon"
+                  />
+                </div>
+                <h4>80+ Languages</h4>
+                <p>
+                  Reach your customers in their native language even if your data is in a different language.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -554,7 +578,7 @@ export default function () {
               </h2>
               <p>
                 Empowering Conversations: Explore Limitless Usecases with Our
-                Intelligent Chatbot Solutions!
+                Intelligent AI Agent Solutions!
               </p>
             </div>
           </div>
@@ -566,7 +590,7 @@ export default function () {
                     <span>Customer Support</span>
                   </h3>
                   <p>
-                    Enhance customer support with our Chatbot AI, providing
+                    Enhance customer support with our AI Agent, providing
                     instant assistance, resolving queries efficiently, and
                     ensuring a seamless and personalized experience.
                   </p>
@@ -592,7 +616,7 @@ export default function () {
                     <span>Lead Generation</span>
                   </h3>
                   <p>
-                    Empower your business with Lead Generation Chatbot AI,
+                    Empower your business with Lead Generation AI Agent,
                     converting conversations into valuable leads for sustainable
                     growth and increased success.
                   </p>
@@ -630,10 +654,10 @@ export default function () {
               <div className="col-md-6">
                 <div className="support_text">
                   <h3>
-                    <span>Multi-platform Chatbots</span>
+                    <span>Multi-platform AI Agents</span>
                   </h3>
                   <p>
-                    Add AI chatbots to your website, mobile app, or any other
+                    Add AI Agent to your website, mobile app, or any other
                     platform with a simple embed code or with our API.
                   </p>
                 </div>
@@ -662,8 +686,8 @@ export default function () {
                   <span>INTEGRATIONS</span>
                 </h3>
                 <p>
-                  Enhance your workflow with seamless integrations. Our Chatbot
-                  AI effortlessly integrates with your existing systems,
+                  Enhance your workflow with seamless integrations. Our AI Agent
+                  effortlessly integrates with your existing systems,
                   providing a frictionless experience. Streamline communication,
                   automate tasks, and unlock the full potential of your
                   processes. Elevate efficiency and collaboration through
@@ -699,7 +723,7 @@ export default function () {
                 <span>WHAT PEOPLE ARE SAYING</span>
               </h2>
               <p className="sliderDesc">
-                Site Agent is the easiest way to create a chatbot for your
+                Site Agent is the easiest way to create a AI Agent for your
                 website. Don't take our word for it! Here's what people are
                 saying.
               </p>
@@ -754,13 +778,7 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Mollitia non libero iure. Voluptatem officiis enim ut
-                          et ut qui voluptatem voluptatum. Qui est accusantium
-                          velit aut dolores qui. Non eveniet officia corporis
-                          aut perspiciatis natus sit. Sunt consequuntur possimus
-                          hic dolorem eveniet qui numquam occaecati ratione.
-                          Deserunt amet eaque reprehenderit non et culpa ut
-                          debitis quos. Dolorum cum quas modi.
+                            Since integrating SiteAgent into our website, customer engagement has skyrocketed. It’s like having a 24/7 digital concierge that truly understands our visitors’ needs. A game-changer for our online business!
                         </p>
                       </div>
                       <div className="userInfo">
@@ -768,7 +786,7 @@ export default function () {
                           <Image src={userIcon} alt="userIcon" />
                         </div>
                         <div className="name_designation">
-                          <h5>Sophia Anderson</h5>
+                          <h5>Emma Ava</h5>
                           <p>Internal Implementation Officer</p>
                         </div>
                       </div>
@@ -795,21 +813,15 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Mollitia non libero iure. Voluptatem officiis enim ut
-                          et ut qui voluptatem voluptatum. Qui est accusantium
-                          velit aut dolores qui. Non eveniet officia corporis
-                          aut perspiciatis natus sit. Sunt consequuntur possimus
-                          hic dolorem eveniet qui numquam occaecati ratione.
-                          Deserunt amet eaque reprehenderit non et culpa ut
-                          debitis quos. Dolorum cum quas modi.
+                          I was blown away by how seamless it was to customize SiteAgent to match our brand’s voice and style. It not only looks like an integral part of our site but also interacts in a way that feels incredibly natural and helpful.
                         </p>
                       </div>
                       <div className="userInfo">
                         <div className="userImg">
-                          <Image src={userIcon} alt="userIcon" />
+                          <Image src={userIcon_2} alt="userIcon_2" />
                         </div>
                         <div className="name_designation">
-                          <h5>Sophia Anderson</h5>
+                          <h5>Inaya Maeve</h5>
                           <p>Internal Implementation Officer</p>
                         </div>
                       </div>
@@ -836,21 +848,15 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Mollitia non libero iure. Voluptatem officiis enim ut
-                          et ut qui voluptatem voluptatum. Qui est accusantium
-                          velit aut dolores qui. Non eveniet officia corporis
-                          aut perspiciatis natus sit. Sunt consequuntur possimus
-                          hic dolorem eveniet qui numquam occaecati ratione.
-                          Deserunt amet eaque reprehenderit non et culpa ut
-                          debitis quos. Dolorum cum quas modi.
+                          Our support team has been able to focus on more complex issues since SiteAgent took over routine inquiries. It’s impressively intuitive, handling questions with the kind of precision and friendliness we didn’t think was possible from AI.
                         </p>
                       </div>
                       <div className="userInfo">
                         <div className="userImg">
-                          <Image src={userIcon} alt="userIcon" />
+                          <Image src={userIcon_3} alt="userIcon_3" />
                         </div>
                         <div className="name_designation">
-                          <h5>Sophia Anderson</h5>
+                          <h5>Luna Iris</h5>
                           <p>Internal Implementation Officer</p>
                         </div>
                       </div>
@@ -877,21 +883,15 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Mollitia non libero iure. Voluptatem officiis enim ut
-                          et ut qui voluptatem voluptatum. Qui est accusantium
-                          velit aut dolores qui. Non eveniet officia corporis
-                          aut perspiciatis natus sit. Sunt consequuntur possimus
-                          hic dolorem eveniet qui numquam occaecati ratione.
-                          Deserunt amet eaque reprehenderit non et culpa ut
-                          debitis quos. Dolorum cum quas modi.
+                          Implementing SiteAgent was a breeze, and the results have been phenomenal. The personalized interactions have significantly improved our conversion rates. It’s truly set a new standard for customer service on our site.
                         </p>
                       </div>
                       <div className="userInfo">
                         <div className="userImg">
-                          <Image src={userIcon} alt="userIcon" />
+                          <Image src={userIcon_4} alt="userIcon_4" />
                         </div>
                         <div className="name_designation">
-                          <h5>Sophia Anderson</h5>
+                          <h5>Jream Arlet</h5>
                           <p>Internal Implementation Officer</p>
                         </div>
                       </div>

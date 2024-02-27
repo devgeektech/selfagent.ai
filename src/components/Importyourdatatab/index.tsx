@@ -14,7 +14,7 @@ function Importyourdatatab() {
           <div className="col-md-5">
             <div className="content-tab-left">
               <h2>Import your <br/> data</h2>
-              <p>Effortlessly integrate and enhance your system with our Chatbot AI. Streamline processes by importing your data seamlessly, empowering the chatbot to provide personalized and efficient interactions, creating a more intuitive and responsive user experience.
+              <p>Effortlessly integrate and enhance your system with our AI Agent. Streamline processes by importing your data seamlessly, empowering the AI Agent to provide personalized and efficient interactions, creating a more intuitive and responsive user experience.
               </p>
               <Link className="learnmore" href={"/"}>
                 Learn more
