@@ -787,7 +787,7 @@ export default function () {
                         </div>
                         <div className="name_designation">
                           <h5>Emma Ava</h5>
-                          <p>Internal Implementation Officer</p>
+                          <p>VP @ Meta</p>
                         </div>
                       </div>
                     </div>
@@ -822,7 +822,7 @@ export default function () {
                         </div>
                         <div className="name_designation">
                           <h5>Inaya Maeve</h5>
-                          <p>Internal Implementation Officer</p>
+                          <p>CMO @ uniliver</p>
                         </div>
                       </div>
                     </div>
@@ -857,7 +857,7 @@ export default function () {
                         </div>
                         <div className="name_designation">
                           <h5>Luna Iris</h5>
-                          <p>Internal Implementation Officer</p>
+                          <p>SVP @ Shopify</p>
                         </div>
                       </div>
                     </div>
@@ -892,7 +892,7 @@ export default function () {
                         </div>
                         <div className="name_designation">
                           <h5>Jream Arlet</h5>
-                          <p>Internal Implementation Officer</p>
+                          <p>SVP @ Shopify</p>
                         </div>
                       </div>
                     </div>
