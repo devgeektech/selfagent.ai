@@ -1,0 +1,78 @@
+header.header, footer.footer {
+  display: none;
+}
+.helpPage {
+  .innerpage {
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      font-family: 'Inter-Medium';
+      margin-bottom: 30px;
+    }
+    label.form-label {
+      font-family: 'Inter-Medium';
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000;
+    }
+    textarea.form-control {
+      border-radius: 6px;
+      height: 140px;
+      resize: inherit;
+    }
+    input.form-control, select.form-select, textarea.form-control  {
+      font-size: 14px;
+    }
+    button.btnprimary.caseBtn {
+      padding: 8px 19px 8px 19px;
+      border: none;
+      border-radius: 6px;
+    }
+    button.btnDefault {
+      box-shadow: 0px 16px 16px 0px #32324714;
+      padding: 10px 23px 10px 23px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      background: #F7F7F7;
+    }
+  }
+}
+
+.caseModal {
+  .modal-header {
+    justify-content: center;
+    border-bottom: none;
+    .modal-title.h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .modal-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+}
+
+/* Media Query start */

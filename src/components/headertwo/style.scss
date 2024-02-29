@@ -1,9 +1,9 @@
-header.header {
+header.headersecond {
     width: 100%;
     border-bottom: 1px solid #E4E4E74A;
     nav.navbar {
         background: #fff !important;
-        padding: 25px 0;
+        padding: 15px;
         a.navbar-brand {
             img {
                 max-width: 260px;
@@ -12,35 +12,9 @@ header.header {
         }
         .navbar-collapse {
             background-color: transparent;
-            justify-content: center;
-            .btns_wrap {
-                display: none;
-            }
+            justify-content: flex-end;
         }
-            button.navbar-toggler.collapsed {
-                span.navbar-toggler-icon {
-                    background-image: url('../../assets/images/MenuIcon.svg');
-                    width: 38px;
-                    height: 26px;
-                    background-size: 38px 26px;
-                    background-clip: content-box;
-                }
-            }
-            button.navbar-toggler {
-                border: none;
-                padding: 0px;
-                span.navbar-toggler-icon {
-                    background-image: url('../../assets/images/MenuCrossicon.svg');
-                    width: 20px;
-                    height: 20px;
-                    background-size: 20px 20px;
-                    background-clip: content-box;
-                }
-                &:focus {
-                    box-shadow: none;
-                }
-            }
-        
+          
         .navbar-nav {
             a.nav-link {
                 color: #18181B;
@@ -48,6 +22,9 @@ header.header {
                 font-size: 14px;
                 margin: 0 30px;
                 line-height: 20px;
+                &:last-child {
+                    margin-right: 0px;
+                }
             }
             .dropdown-toggle {
                 &::after {
@@ -62,28 +39,7 @@ header.header {
             }
         }
     }
-    .btns_wrap {
-        padding-left: 30px;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 2px;
-            height: 20px;
-            background: #fff;
-            top: 8px;
-        }
-        .btn-btnSecondary {
-            font-size: 15px;
-            border-radius: 8px;
-            font-family: 'PlusJakartaSans-SemiBold';
-        }
-        button.btnprimary.btn.btn-primary {
-            margin-left: 12px;
-            border-radius: 8px;
-        }
-    }
+    
 }
 
 

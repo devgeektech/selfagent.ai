@@ -1,0 +1,202 @@
+header.header, footer.footer {
+  display: none;
+}
+.accountPage {
+  .innerpage {
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      font-family: 'Inter-Medium';
+      margin-bottom: 30px;
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .account-content {
+      .block-border {
+        padding: 20px;
+        border: 1px solid #E5E7EB;
+        border-radius: 4px;
+        margin-bottom: 34px;
+        p.consmue {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        button.editBtn {
+          background: #494450;
+          color: #fff;
+          padding: 8px 30px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: center;
+          border-radius: 6px;
+          border: none;
+      }
+      }
+    }
+    .plan-block {
+      border: 1px solid #E5E7EB;
+      padding: 24px 24px 40px  24px;
+      border-radius: 4px;
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        li {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          padding-left: 30px;
+          position: relative;
+          &::before {
+            background-image: url('../../assets/images/greenTickIcon.svg');
+            background-size: 13px 8px;
+            height: 8px;
+            width: 13px;
+            background-position: left center;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    button.upgradeBtn {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+    }
+    button.btnprimary.caseBtn {
+      padding: 8px 19px 8px 19px;
+      border: none;
+      border-radius: 6px;
+    }
+    .danger-zone {
+      margin-top: 30px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      border-top: 1px solid #D4D4D8;
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: #52525B;
+        margin-bottom: 20px;
+      }
+      button.deleteAccountBtn {
+        background: #F63A3A;
+        border: none;
+        color: #fff;
+        padding: 11px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        border-radius: 6px;
+      }
+      button.signoutBtn {
+        background: #000000;
+        color: #fff;
+        border-radius: 6px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 8px 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.emailEditModal {
+  .iconWrapper {
+    span {
+      background: #FEE2E2;
+      box-shadow: 6px 6px 14px 0px #00000014;
+    }
+  }
+  .modal-header {
+    justify-content: center;
+    border-bottom: none;
+    .modal-title.h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .modal-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+    }
+    input.form-control {
+      border: 1px solid #E5E7EB;
+      height: 36px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    label.form-label {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+    }
+    p.message {
+      color: #36B063;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-top: 10px;
+    }
+  }
+
+}
+
+/* Media Query start */
+

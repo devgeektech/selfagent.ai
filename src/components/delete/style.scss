@@ -1,0 +1,55 @@
+.deleteModal {
+    .iconWrapper {
+        span {
+            background: #FEE2E2;
+        }
+    }
+    .modal-header {
+        flex-direction: column;
+        border-bottom: none;
+        padding: 20px 0 0 0;
+        .modal-title.h4 {
+            font-size: 20px;
+            line-height: 26px;
+            font-family: 'Inter-Bold';
+            margin-bottom: 15px;
+        }
+        p {
+            color: #8C9097;
+            font-size: 14px;
+            font-family: 'Inter-Regular';
+            margin-bottom: 0px;
+        }
+    }
+    .modal-body {
+        padding: 0px 28px 5px 30px;
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                text-align: left;
+            }
+            label.form-label {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #444454;
+            }
+    }
+    .modal-footer {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .deleteModal {
+        .modal-dialog {
+            max-width: 420px;
+        }
+    }
+}
