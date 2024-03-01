@@ -15,6 +15,7 @@ import tabQAIcon from "../../assets/images/tabQAIcon.png";
 import tabNotionBlackIcon from "../../assets/images/tabNotionBlackIcon.png";
 import tabNotionIcon from "../../assets/images/tabNotionIcon.png";
 import uploadIcon from "../../assets/images/uploadIcon.svg";
+import circleTickGreenIcon from "../../assets/images/circleTickGreenIcon.svg";
 
 import "./style.scss";
 import Headertwo from "@/components/headertwo";
@@ -36,9 +37,10 @@ export default function Datasourecs(props: any) {
   const deleteClose = () => setShowDelete(false);
   const deleteShow = () => setShowDelete(true);
 
-  const showdeletefun = () => {
-    setShowDelete(true);
-  };
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -54,12 +56,12 @@ export default function Datasourecs(props: any) {
             </div>
             <div className="card-block">
               <div className="leftTabsWrapper">
-                <Tab.Container id="left-tabs" defaultActiveKey="first">
+                <Tab.Container id="left-tabs" defaultActiveKey="files">
                   <Row>
                     <Col xl={2} lg={3}>
                       <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                          <Nav.Link eventKey="first">
+                          <Nav.Link eventKey="files">
                             <strong>
                               <Image
                                 className="gradientIcon"
@@ -76,7 +78,7 @@ export default function Datasourecs(props: any) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="second">
+                          <Nav.Link eventKey="text">
                             <strong>
                               <Image
                                 className="gradientIcon"
@@ -93,7 +95,7 @@ export default function Datasourecs(props: any) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="third">
+                          <Nav.Link eventKey="website">
                             <strong>
                               <Image
                                 className="gradientIcon"
@@ -110,7 +112,7 @@ export default function Datasourecs(props: any) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="fourth">
+                          <Nav.Link eventKey="q&a">
                             <strong>
                               <Image
                                 className="gradientIcon"
@@ -127,7 +129,7 @@ export default function Datasourecs(props: any) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="fifth">
+                          <Nav.Link eventKey="notion">
                             <strong>
                               <Image
                                 className="gradientIcon"
@@ -147,7 +149,7 @@ export default function Datasourecs(props: any) {
                     </Col>
                     <Col xl={7} lg={6}>
                       <Tab.Content>
-                        <Tab.Pane eventKey="first">
+                        <Tab.Pane eventKey="files">
                           <div className="tab_content">
                             <div className="title">
                               <h2>Files</h2>
@@ -225,14 +227,47 @@ export default function Datasourecs(props: any) {
                             </div>
                           </div>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                          Second tab content
+                        <Tab.Pane eventKey="text" className="">
+                          <div className="tab_content textTab">
+                            <div className="title">
+                              <h2>Text</h2>
+                            </div>
+                            <div className="content-wrapper">
+                              <Form.Control as="textarea" placeholder="data" />
+                              <h3 className="text-center">
+                              870 characters
+                              </h3>
+                              
+                            </div>
+                          </div>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="third">third tab content</Tab.Pane>
-                        <Tab.Pane eventKey="fourth">
+                        <Tab.Pane eventKey="website">
+                          <div className="tab_content websiteTab">
+                            <div className="title">
+                              <h2>Website</h2>
+                            </div>
+                            <div className="content-wrapper">
+                              <div className="websiteTab-content">
+                                  <h4>Crawl</h4>
+                                  <div className="position-relative link_btn">
+                                    <Form.Control type="text" placeholder="https://selfsite.ai" />
+                                    <button className="btnprimary">Fatch More link</button>
+                                  </div>
+                                  <div className="progress_percentage">
+                                  <div className="d-flex justify-content-between">
+                                    <p className="countChar mb-0">100%</p>
+                                  </div>
+                                  <ProgressBar variant="success" now={100} />
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="q&a">
                           fourth tab content
                         </Tab.Pane>
-                        <Tab.Pane eventKey="fifth">fifth tab content</Tab.Pane>
+                        <Tab.Pane eventKey="notion">fifth tab content</Tab.Pane>
                       </Tab.Content>
                     </Col>
                     <Col xl={3} lg={3}>
@@ -242,7 +277,9 @@ export default function Datasourecs(props: any) {
                         <p>
                           <strong>0</strong>/300,000 limit
                         </p>
-                        <button className="btnprimary">Create Chatbot</button>
+                        <button className="btnprimary" onClick={handleShow}>
+                          Create Chatbot
+                        </button>
                         <div className="progress_percentage">
                           <div className="d-flex justify-content-between">
                             <p className="countChar mb-0">20%</p>
@@ -272,9 +309,37 @@ export default function Datasourecs(props: any) {
           show={deleteShow}
           hide={deleteClose}
         />
-
-        
       )}
+
+      {/* siateagentReadyModal Modal start  */}
+        <Modal
+          show={show}
+          onHide={handleClose}
+          keyboard={false}
+          centered
+          className="siateagentReadyModal"
+        >
+          <div className="iconWrapper text-center">
+            <span>
+              <Image src={circleTickGreenIcon} alt="circleTickGreenIcon" />
+            </span>
+          </div>
+          <Modal.Header>
+            <Modal.Title>Your siteagent is trained and ready</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>You can now use your siteagent</Modal.Body>
+          <Modal.Footer>
+            <Button
+              className="btnprimary"
+              href={"/"}
+              variant="secondary"
+              onClick={handleClose}
+            >
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      {/* siateagentReadyModal Modal end  */}
     </>
   );
 }

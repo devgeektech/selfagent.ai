@@ -218,4 +218,111 @@ footer.footer {
   }
 }
 
+/* text tab content */
+.textTab {
+  .content-wrapper {
+    textarea.form-control {
+      border-radius: 6px;
+      border: 1px solid #E5E7EB;
+      height: 380px;
+      background: #F9F9F9;
+    }
+    h3 {
+      font-family: "Inter-Regular";
+      color: rgba(0,0,0,0.5);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+/* text tab content end */
+
+/* Website tab content start */
+.websiteTab {
+  .websiteTab-content {
+    background: #F5F5F5;
+    padding: 22px 13px;
+    h4 {
+      font-family: "Inter-Medium";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+  }
+
+    .link_btn {
+      input.form-control {
+        height: 36px;
+        font-family: "Inter-Regular";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+      button.btnprimary {
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        border-radius: 4px;
+        border: none;
+        padding: 6.5px 12px;
+        font-family: "Inter-Regular";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+
+      }
+    }
+  }
+}
+/* Website tab content end */
+
+/*  siateagentReadyModal Scss start */
+.siateagentReadyModal {
+  .iconWrapper {
+    img {
+      box-shadow: 6px 6px 14px 0px #00000014;
+      border-radius: 100px;
+    }
+  }
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+    padding-bottom: 0;
+    .modal-title.h4 {
+      font-family: "Inter-Medium";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0em;
+    }
+  }
+  .modal-body {
+    font-family: "Inter-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .modal-footer {
+    a.btnprimary.btn.btn-secondary {
+      padding: 7px 20px;
+      border-radius: 6px;
+    }
+  }
+}
+
+
+
+/*  siateagentReadyModal Scss end */
+
 /* Media Query start */
