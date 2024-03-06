@@ -2,8 +2,7 @@ header.header,
 footer.footer {
   display: none;
 }
-.dataSourecsPage {
-  .innerpage {
+
     .title_desc {
       margin-bottom: 50px;
       h1 {
@@ -263,7 +262,6 @@ footer.footer {
             button.delete-Btn {
               border: 1px solid #dc2626;
               background: rgba(239, 68, 68, 0.1019607843);
-              font-family: Inter;
               font-size: 14px;
               font-weight: 400;
               line-height: 16px;
@@ -393,7 +391,6 @@ footer.footer {
             background: #494450;
             border-color: #494450;
             padding: 12px 40px;
-            font-family: Inter;
             font-size: 14px;
             font-weight: 600;
             line-height: 17px;
@@ -404,8 +401,7 @@ footer.footer {
         }
       }
     }
-  }
-}
+
 /* text tab content */
 .textTab {
   .content-wrapper {
@@ -523,73 +519,91 @@ footer.footer {
 .main-add-form {
   display: none;
 }
-div[role="Connect Notion"] {
-  max-width: 512px;
-  .modal-header {
-    padding: 26px 40px 0;
-    border: none;
-    position: relative;
-    .modal-title.h4 {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 24px;
-      letter-spacing: 0em;
-      text-align: left;
+.connectNotionModal {
+  .modal-dialog {
+    max-width: 512px;
+    .modal-header {
+      padding: 26px 40px 0;
+      border: none;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      .modal-title.h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .inr-yellow-card {
+        img {
+          position: absolute;
+          left: 8px;
+          width: 26px;
+          top: 22px;
+        }
+      }
     }
-    .inr-yellow-card {
-      img {
-        position: absolute;
-        left: 8px;
-        width: 26px;
-        top: 22px;
+    .modal-body {
+      padding: 30px 20px 10px 40px;
+      h6 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+        color: #52525b;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #52525b;
+      }
+    }
+    .modal-footer {
+      justify-content: flex-end;
+      padding: 0 40px 30px;
+      gap: 10px;
+      button.close {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 10px 14px;
+        border: 1px solid #e4e4e7;
+        background: #ffffff;
+        color: #000;
+        margin: 0;
+      }
+      button.btnprimary {
+        border-radius: 6px;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 10px 25px;
       }
     }
   }
-  .modal-body {
-    padding: 30px 20px 10px 40px;
-    h6 {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-bottom: 20px;
-      color: #52525b;
-    }
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 19px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #52525b;
-    }
-  }
-  .modal-footer {
-    justify-content: flex-end;
-    padding: 0 40px 30px;
-    gap: 10px;
-    button.close {
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 17px;
-      letter-spacing: 0em;
-      text-align: center;
-      padding: 10px 14px;
-      border: 1px solid #e4e4e7;
-      background: #ffffff;
-      color: #000;
-      margin: 0;
-    }
-    button.btnprimary {
-      border-radius: 6px;
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 17px;
-      letter-spacing: 0em;
-      text-align: center;
-      padding: 10px 25px;
+}
+
+@media only screen and (max-width: 480px) {
+  .connectNotionModal {
+    .modal-dialog {
+      .modal-body {
+        padding: 30px 20px 10px 20px;
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
     }
   }
 }

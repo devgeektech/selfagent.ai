@@ -91,10 +91,40 @@ header.headersecond {
 }
 
 @media only screen and (max-width: 767px) {
+    header.headersecond {
+        nav.navbar {
+            padding-left: 0;
+            padding-right: 0;
+            .navbar-nav {
+                a.nav-link {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
     header.header {
         a.navbar-brand {
             img {
                 max-width: 178px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header.headersecond {
+        nav.navbar {
+            a.navbar-brand {
+                img {
+                    max-width: 140px;
+                }
+            }
+            .navbar-nav {
+                a.nav-link {
+                    margin: 0 5px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
     }

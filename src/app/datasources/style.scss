@@ -66,6 +66,7 @@ footer.footer {
             height: 210px;
             position: relative;
             box-shadow: 0px 8px 16px 0px #32324708;
+            padding: 15px;
             input.form-control[type="file"] {
               position: absolute;
               left: 0;
@@ -114,6 +115,7 @@ footer.footer {
               position: relative;
               span {
                 font-family: "Inter-Regular";
+                white-space: nowrap;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19px;
@@ -263,7 +265,6 @@ footer.footer {
             button.delete-Btn {
               border: 1px solid #dc2626;
               background: rgba(239, 68, 68, 0.1019607843);
-              font-family: Inter;
               font-size: 14px;
               font-weight: 400;
               line-height: 16px;
@@ -359,7 +360,7 @@ footer.footer {
             line-height: 17px;
             letter-spacing: 0em;
             text-align: left;
-            padding: 13px 9px;
+            padding: 8px;
             background: transparent;
             color: #ef4444;
             border-color: #ef4444;
@@ -368,6 +369,8 @@ footer.footer {
           button.deleteBtn {
             background: rgba(221, 46, 46, 0.1);
             border: none;
+            min-width: 40px;
+            max-width: 40px;
             width: 40px;
             height: 40px;
             border-radius: 100px;
@@ -393,7 +396,6 @@ footer.footer {
             background: #494450;
             border-color: #494450;
             padding: 12px 40px;
-            font-family: Inter;
             font-size: 14px;
             font-weight: 600;
             line-height: 17px;
@@ -451,6 +453,7 @@ footer.footer {
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
+        background: transparent;
       }
       button.btnprimary {
         position: absolute;
@@ -514,8 +517,6 @@ footer.footer {
 }
 
 /*  siateagentReadyModal Scss end */
-
-/* Media Query start */
 
 .main-add-form.show {
   display: block;
@@ -590,6 +591,86 @@ div[role="Connect Notion"] {
       letter-spacing: 0em;
       text-align: center;
       padding: 10px 25px;
+    }
+  }
+}
+
+/* Media Query start */
+
+@media only screen and (max-width: 1023px) {
+  .dataSourecsPage {
+    .innerpage {
+      .title_desc {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .dataSourecsPage {
+    .innerpage {
+      .card-block {
+        padding: 20px;
+
+        .leftTabsWrapper {
+          .nav.nav-pills {
+            margin-bottom: 20px;
+          }
+        }
+        .block-total {
+          margin-top: 20px;
+          .progress_percentage {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dataSourecsPage {
+    .innerpage {
+      .card-block {
+        padding: 15px;
+        .leftTabsWrapper {
+          .tab_content {
+            .content-wrapper {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dataSourecsPage {
+    .innerpage {
+      .leftTabsWrapper {
+        .tab_content {
+          .content-wrapper {
+            .uploadFileWrapper {
+              .borderWrap {
+                width: 100%;
+              }
+              .uploadedFiles {
+                .fileName {
+                  align-items: flex-start;
+                  flex-direction: column;
+                  button.deleteBtn {
+                    margin-top: 15px;
+                  }
+                }
+                .padding-20 {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

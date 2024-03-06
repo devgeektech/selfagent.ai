@@ -38,6 +38,10 @@ import forbes from "../assets/images/forbes.png";
 import nbc from "../assets/images/nbc.png";
 import languageGradientIcon from "../assets/images/languageGradientIcon.svg";
 import languageWhiteIcon from "../assets/images/languageWhiteIcon.svg";
+import secureIntegrationIcon from "../assets/images/secureIntegrationIcon.svg";
+import auditIcon from "../assets/images/auditIcon.svg";
+import governanceIcon from "../assets/images/governanceIcon.svg";
+import privacyIcon from "../assets/images/privacyIcon.svg";
 import { Button, Form, Tab, Tabs } from "react-bootstrap";
 import "./style.scss";
 import Link from "next/link";
@@ -48,7 +52,7 @@ import Importyourdatatab from "@/components/Importyourdatatab";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 import "swiper/css";
 import { Navigation, Autoplay } from "swiper/modules";
 // import "swiper/css/pagination";
@@ -74,7 +78,7 @@ export default function () {
                 </p>
                 <div className="d-flex mt-4">
                   <button className="btnprimary chatbotBtn">
-                  Build your AI Agent{" "}
+                    Build your AI Agent{" "}
                     <Image
                       src={arrowRightWhiteIcon}
                       alt="arrowRightWhiteIcon"
@@ -90,11 +94,7 @@ export default function () {
             </div>
             <div className="col-md-6">
               <div className="videoWrapper">
-                <Image
-                  className="h-auto"
-                  src={bannerVideo}
-                  alt="bannerVideo"
-                />
+                <Image className="h-auto" src={bannerVideo} alt="bannerVideo" />
               </div>
             </div>
           </div>
@@ -103,65 +103,68 @@ export default function () {
 
       <section className="logosWrapper">
         <div className="container">
-          <h3 className="text-center"><span>See our news coverage</span></h3>
+          <h3 className="text-center">
+            <span>See our news coverage</span>
+          </h3>
           <div className="row">
             <div className="col-sm-12">
-            <Swiper  modules={[Navigation, Autoplay]}
-                  slidesPerView={4}
-                  spaceBetween={20}
-                  loop={true}
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  className="logoSwiper"
-                  breakpoints={{
-                    // when window width is >= 640px
-                    100: {
-                      slidesPerView: 1,
-                    },
-                    // when window width is >= 768px
-                    768: {
-                      width: 768,
-                      slidesPerView: 2,
-                      spaceBetween:"10px"
-                    },
-                    1024: {
-                      slidesPerView: 4,
-                      spaceBetween:"20px"
-                    },
-                    1920: {
-                      slidesPerView: 4,
-                      spaceBetween:"20px"
-                    },
-                  }}
-                >
-                  <SwiperSlide>
-                    <div className="swiperSlide">
-                      <Image src={yahoo} alt='yahoo'/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="swiperSlide">
-                      <Image src={bloomberg} alt='bloomberg'/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="swiperSlide">
-                      <Image src={forbes} alt='forbes'/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="swiperSlide">
-                      <Image src={nbc} alt='nbc'/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="swiperSlide">
-                      <Image src={yahoo} alt='yahoo'/>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                slidesPerView={4}
+                spaceBetween={20}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                className="logoSwiper"
+                breakpoints={{
+                  // when window width is >= 640px
+                  100: {
+                    slidesPerView: 1,
+                  },
+                  // when window width is >= 768px
+                  768: {
+                    width: 768,
+                    slidesPerView: 2,
+                    spaceBetween: "10px",
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    spaceBetween: "20px",
+                  },
+                  1920: {
+                    slidesPerView: 4,
+                    spaceBetween: "20px",
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="swiperSlide">
+                    <Image src={yahoo} alt="yahoo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiperSlide">
+                    <Image src={bloomberg} alt="bloomberg" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiperSlide">
+                    <Image src={forbes} alt="forbes" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiperSlide">
+                    <Image src={nbc} alt="nbc" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiperSlide">
+                    <Image src={yahoo} alt="yahoo" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -237,12 +240,13 @@ export default function () {
               <div className="content_width">
                 <h4>HOW IT WORKS</h4>
                 <p>
-                  SiteAgent is a leap forward in digital customer engagement, combining the latest AI
-                  technology with the nuanced touch of human-like conversation.
-                  Our platform is designed to seamlessly integrate with your
-                  website, providing your customers with an intelligent,
-                  responsive service agent capable of understanding and
-                  fulfilling their needs in real time.
+                  SiteAgent is a leap forward in digital customer engagement,
+                  combining the latest AI technology with the nuanced touch of
+                  human-like conversation. Our platform is designed to
+                  seamlessly integrate with your website, providing your
+                  customers with an intelligent, responsive service agent
+                  capable of understanding and fulfilling their needs in real
+                  time.
                 </p>
               </div>
             </div>
@@ -284,9 +288,7 @@ export default function () {
               <h2>
                 <span>Benefits</span>
               </h2>
-              <p>
-                Everything you need for your no-code AI Agent is provided.
-              </p>
+              <p>Everything you need for your no-code AI Agent is provided.</p>
             </div>
           </div>
           <div className="row">
@@ -410,9 +412,7 @@ export default function () {
               <h2 className="gradient_color">
                 <span>POWERFUL FEATURES</span>
               </h2>
-              <p>
-                Everything you need for your no-code AI Agent is provided.
-              </p>
+              <p>Everything you need for your no-code AI Agent is provided.</p>
             </div>
           </div>
           <div className="row">
@@ -543,8 +543,92 @@ export default function () {
                 </div>
                 <h4>80+ Languages</h4>
                 <p>
-                  Reach your customers in their native language even if your data is in a different language.
+                  Reach your customers in their native language even if your
+                  data is in a different language.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="safetyWrapper">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <h2>
+                <span>Safety and Seucrity</span>
+              </h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="safetyBlockWrapper">
+                <div className="row">
+                  <div className="col-md-6 mb-4">
+                    <div className="safetyBlock">
+                      <div className="iconWrap mb-2">
+                        <Image src={secureIntegrationIcon} alt='secureIntegrationIcon'/>
+                      </div>
+                      <h2>
+                        <span>Secure Integration</span>
+                      </h2>
+                      <p>
+                        “SiteAgent's integration with your record systems is
+                        seamless yet strictly governed, adhering to your
+                        established security and policy guidelines for every
+                        interaction.”
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="safetyBlock">
+                    <div className="iconWrap mb-2">
+                        <Image src={auditIcon} alt='auditIcon'/>
+                      </div>
+                      <h2>
+                        <span>Auditing</span>
+                      </h2>
+                      <p>
+                        “Our integrated quality assurance mechanisms allow your
+                        customer experience team to seamlessly trace and
+                        understand the logic behind each of SiteAgent’s
+                        interactions.”
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="safetyBlock">
+                    <div className="iconWrap mb-2">
+                        <Image src={governanceIcon} alt='governanceIcon'/>
+                      </div>
+                      <h2>
+                        <span>Data Governance</span>
+                      </h2>
+                      <p>
+                        “Your data is exclusively utilized for enhancing your
+                        specific SiteAgent’s performance. We strictly prohibit
+                        the use of your data in model training, adhering to the
+                        highest standards of data security.”
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="safetyBlock">
+                    <div className="iconWrap mb-2">
+                        <Image src={privacyIcon} alt='privacyIcon'/>
+                      </div>
+                      <h2>
+                        <span>Privacy</span>
+                      </h2>
+                      <p>
+                        “We prioritize the confidentiality of personal
+                        information, implementing automatic encryption and
+                        anonymization to protect user privacy.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -678,7 +762,6 @@ export default function () {
                     src={integrationImgMobile}
                     alt="integrationImgMobile"
                   />
-                  
                 </div>
               </div>
               <div className="col-md-5">
@@ -687,11 +770,11 @@ export default function () {
                 </h3>
                 <p>
                   Enhance your workflow with seamless integrations. Our AI Agent
-                  effortlessly integrates with your existing systems,
-                  providing a frictionless experience. Streamline communication,
-                  automate tasks, and unlock the full potential of your
-                  processes. Elevate efficiency and collaboration through
-                  intelligent integrations tailored to your unique needs.
+                  effortlessly integrates with your existing systems, providing
+                  a frictionless experience. Streamline communication, automate
+                  tasks, and unlock the full potential of your processes.
+                  Elevate efficiency and collaboration through intelligent
+                  integrations tailored to your unique needs.
                 </p>
               </div>
             </div>
@@ -732,7 +815,9 @@ export default function () {
           <div className="row">
             <div className="col-sm-12">
               <div className="swiperSliderWrapper">
-                <Swiper navigation={true} modules={[Navigation]}
+                <Swiper
+                  navigation={true}
+                  modules={[Navigation]}
                   slidesPerView={3}
                   spaceBetween={20}
                   className="mySwiper"
@@ -745,15 +830,15 @@ export default function () {
                     768: {
                       width: 768,
                       slidesPerView: 3,
-                      spaceBetween:"10px"
+                      spaceBetween: "10px",
                     },
                     1024: {
                       slidesPerView: 3,
-                      spaceBetween:"20px"
+                      spaceBetween: "20px",
                     },
                     1920: {
                       slidesPerView: 3,
-                      spaceBetween:"20px"
+                      spaceBetween: "20px",
                     },
                   }}
                 >
@@ -778,7 +863,10 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                            Since integrating SiteAgent into our website, customer engagement has skyrocketed. It’s like having a 24/7 digital concierge that truly understands our visitors’ needs. A game-changer for our online business!
+                          Since integrating SiteAgent into our website, customer
+                          engagement has skyrocketed. It’s like having a 24/7
+                          digital concierge that truly understands our visitors’
+                          needs. A game-changer for our online business!
                         </p>
                       </div>
                       <div className="userInfo">
@@ -813,7 +901,11 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          I was blown away by how seamless it was to customize SiteAgent to match our brand’s voice and style. It not only looks like an integral part of our site but also interacts in a way that feels incredibly natural and helpful.
+                          I was blown away by how seamless it was to customize
+                          SiteAgent to match our brand’s voice and style. It not
+                          only looks like an integral part of our site but also
+                          interacts in a way that feels incredibly natural and
+                          helpful.
                         </p>
                       </div>
                       <div className="userInfo">
@@ -848,7 +940,11 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Our support team has been able to focus on more complex issues since SiteAgent took over routine inquiries. It’s impressively intuitive, handling questions with the kind of precision and friendliness we didn’t think was possible from AI.
+                          Our support team has been able to focus on more
+                          complex issues since SiteAgent took over routine
+                          inquiries. It’s impressively intuitive, handling
+                          questions with the kind of precision and friendliness
+                          we didn’t think was possible from AI.
                         </p>
                       </div>
                       <div className="userInfo">
@@ -883,7 +979,11 @@ export default function () {
                       </ul>
                       <div className="slideDesc">
                         <p>
-                          Implementing SiteAgent was a breeze, and the results have been phenomenal. The personalized interactions have significantly improved our conversion rates. It’s truly set a new standard for customer service on our site.
+                          Implementing SiteAgent was a breeze, and the results
+                          have been phenomenal. The personalized interactions
+                          have significantly improved our conversion rates. It’s
+                          truly set a new standard for customer service on our
+                          site.
                         </p>
                       </div>
                       <div className="userInfo">
@@ -900,7 +1000,7 @@ export default function () {
                 </Swiper>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </section>
     </div>

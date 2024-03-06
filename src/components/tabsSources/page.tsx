@@ -55,8 +55,8 @@ export default function Datasourecs(props: any) {
 
   return (
     <>
-      <div className="dataSourecsPage">
-        <div className="innerpage">
+      {/* <div className="dataSourecsPage">
+        <div className="innerpage"> */}
           <div className="card-block">
             <div className="leftTabsWrapper">
               <Tab.Container id="left-tabs" defaultActiveKey="files">
@@ -414,8 +414,8 @@ export default function Datasourecs(props: any) {
               </Tab.Container>
             </div>
           </div>
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
 
       {showdelete && (
         <Delete
@@ -463,7 +463,7 @@ export default function Datasourecs(props: any) {
       {/* siateagentReadyModal Modal end  */}
 
       {/* Connect Notion Modal start */}
-      <Modal show={connectshow} onHide={connectNotionClose} centered size="lg" role="Connect Notion"> 
+      <Modal show={connectshow} className="connectNotionModal" onHide={connectNotionClose} centered size="lg" role="Connect Notion"> 
         <Modal.Header closeButton>
           <div className="inr-yellow-card">
             <Image src={yellowCard} alt="yellowCard"></Image>

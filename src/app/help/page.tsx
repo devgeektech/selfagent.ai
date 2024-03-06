@@ -66,7 +66,7 @@ export default function Help() {
                                 </div>
                                 <Form.Group className="mb-4" controlId="subject">
                                     <Form.Label>Subject</Form.Label>
-                                    <Form.Control type="text" placeholder="Date range" />
+                                    <Form.Control type="date" placeholder="Date range" />
                                 </Form.Group>
                                 <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>Description</Form.Label>

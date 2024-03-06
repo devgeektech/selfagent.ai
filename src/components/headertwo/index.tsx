@@ -35,7 +35,7 @@ const openReset=()=>{
   return (
     <>
       <header className="headersecond">
-        <Navbar expand="sm" className="bg-white">
+        <Navbar className="bg-white">
           <Container fluid>
             <Navbar.Brand href="#">
               <Image src={logo} alt="logo" />

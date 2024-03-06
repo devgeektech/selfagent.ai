@@ -29,3 +29,25 @@
 footer.footer {
     display: none;
 }
+
+@media only screen and (max-width: 1023px) {
+    .dashboardPage {
+        .sidebar_page-content {
+            flex-direction: column;
+            .sidebarWrapper {
+                max-width: 100%;
+            }
+            .page-content {
+                .siteView {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .carouselWrapper {
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

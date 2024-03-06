@@ -76,3 +76,43 @@ header.header, footer.footer {
 }
 
 /* Media Query start */
+
+@media only screen and (max-width: 991px) {
+  .helpPage {
+    .innerpage {
+      padding: 30px 0;
+      h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .card-block {
+        padding: 20px;
+      }      
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .helpPage {
+    .innerpage {
+      h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+      label.form-label {
+        font-size: 14px;
+      }
+      .error {
+        margin-bottom: 15px;
+      }
+      button.btnprimary.caseBtn {
+        padding: 8px 10px 8px 10px;
+      }
+      button.btnDefault {
+        padding: 8px 12px 8px 12px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

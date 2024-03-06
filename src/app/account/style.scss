@@ -1,4 +1,5 @@
-header.header, footer.footer {
+header.header,
+footer.footer {
   display: none;
 }
 .accountPage {
@@ -9,7 +10,7 @@ header.header, footer.footer {
       line-height: 34px;
       letter-spacing: 0em;
       text-align: left;
-      font-family: 'Inter-Medium';
+      font-family: "Inter-Medium";
       margin-bottom: 30px;
     }
     h5 {
@@ -29,7 +30,7 @@ header.header, footer.footer {
     .account-content {
       .block-border {
         padding: 20px;
-        border: 1px solid #E5E7EB;
+        border: 1px solid #e5e7eb;
         border-radius: 4px;
         margin-bottom: 34px;
         p.consmue {
@@ -53,12 +54,12 @@ header.header, footer.footer {
           text-align: center;
           border-radius: 6px;
           border: none;
-      }
+        }
       }
     }
     .plan-block {
-      border: 1px solid #E5E7EB;
-      padding: 24px 24px 40px  24px;
+      border: 1px solid #e5e7eb;
+      padding: 24px 24px 40px 24px;
       border-radius: 4px;
       ul {
         list-style: none;
@@ -72,12 +73,12 @@ header.header, footer.footer {
           padding-left: 30px;
           position: relative;
           &::before {
-            background-image: url('../../assets/images/greenTickIcon.svg');
+            background-image: url("../../assets/images/greenTickIcon.svg");
             background-size: 13px 8px;
             height: 8px;
             width: 13px;
             background-position: left center;
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 50%;
@@ -105,17 +106,17 @@ header.header, footer.footer {
       margin-top: 30px;
       padding-top: 50px;
       padding-bottom: 20px;
-      border-top: 1px solid #D4D4D8;
+      border-top: 1px solid #d4d4d8;
       h5 {
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 0em;
-        color: #52525B;
+        color: #52525b;
         margin-bottom: 20px;
       }
       button.deleteAccountBtn {
-        background: #F63A3A;
+        background: #f63a3a;
         border: none;
         color: #fff;
         padding: 11px 16px;
@@ -146,7 +147,7 @@ header.header, footer.footer {
 .emailEditModal {
   .iconWrapper {
     span {
-      background: #FEE2E2;
+      background: #fee2e2;
       box-shadow: 6px 6px 14px 0px #00000014;
     }
   }
@@ -171,7 +172,7 @@ header.header, footer.footer {
       letter-spacing: 0em;
     }
     input.form-control {
-      border: 1px solid #E5E7EB;
+      border: 1px solid #e5e7eb;
       height: 36px;
       font-size: 12px;
       font-weight: 400;
@@ -186,7 +187,7 @@ header.header, footer.footer {
       letter-spacing: 0em;
     }
     p.message {
-      color: #36B063;
+      color: #36b063;
       font-size: 12px;
       font-weight: 400;
       line-height: 14px;
@@ -195,8 +196,72 @@ header.header, footer.footer {
       padding-top: 10px;
     }
   }
-
 }
 
 /* Media Query start */
 
+@media only screen and (max-width: 991px) {
+  .accountPage {
+    .innerpage {
+      padding: 30px 0;
+      h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .card-block {
+        padding: 20px;
+      }
+      .account-content {
+        .block-border {
+          p {
+            font-size: 14px;
+            line-height: 21px;
+          }
+          p.consmue {
+            font-size: 16px;
+          }
+        }
+      }
+      .plan-block {
+        padding: 20px;
+        ul {
+          li {
+            font-size: 14px;
+            line-height: 32px;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .accountPage {
+    .innerpage {
+      .account-content {
+        .block-border {
+          .d-flex.justify-content-between.align-items-end {
+            flex-direction: column;
+            align-items: flex-start !important;
+          }
+          button.editBtn {
+            margin-top: 10px;
+          }
+         
+        }
+      }
+      .plan-block {
+        ul {
+          li {
+            padding-left: 25px;
+            &:before {
+              top: 12px;
+              transform: none;
+            }
+          }
+        }
+        }
+    }
+  }
+}
