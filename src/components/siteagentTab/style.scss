@@ -1,0 +1,223 @@
+.siteagnetTab {
+  .tab_content {
+    border: 1px solid #e5e7eb;
+    border-radius: 3px;
+    .title {
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 3px;
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 0;
+        color: #000;
+      }
+    }
+    .content-Wrapper {
+      padding: 30px;
+      .id_status {
+        .lightIcon {
+            position: relative;
+          button {
+            border: none;
+            background: transparent;
+          }
+          .infoModal {
+            border: 1px solid #E4E4E7;
+            width: 265px;
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+            .infoModalInner {
+                gap: 15px;
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                    margin-bottom: 15px;
+                }
+                ol {
+                    padding-left: 0px;
+                    li, p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        letter-spacing: 0.01em;
+                        text-align: left;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+          }
+        }
+        label {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .wrapStstusModal {
+          gap: 30px;
+          .status {
+            .status_id {
+              position: relative;
+              padding-left: 20px;
+              &::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 100px;
+                background: #4281ee;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+        }
+        .rangeslider {
+          max-width: 186px;
+          input[type="range"]::-ms-thumb {
+            background: linear-gradient(
+              90deg,
+              #e9088e 1.91%,
+              #7c3aed 97.13%
+            ) !important;
+          }
+          input[type="range"]::-moz-range-thumb {
+            background: linear-gradient(
+              90deg,
+              #e9088e 1.91%,
+              #7c3aed 97.13%
+            ) !important;
+          }
+          input[type="range"]::-webkit-slider-thumb {
+            background: linear-gradient(
+              90deg,
+              #e9088e 1.91%,
+              #7c3aed 97.13%
+            ) !important;
+          }
+        }
+        .dateTime {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(0, 0, 0, 0.75);
+        }
+      }
+
+      .chatBlock {
+        border: 1px solid #e7e7e7;
+        border-radius: 6px;
+        height: 100%;
+        position: relative;
+        box-shadow: 0px 24px 32px 0px #33333308;
+        .topbar {
+          padding: 12px;
+          border: 1px solid #e7e7e7;
+          button {
+            border: none;
+            background: transparent;
+          }
+        }
+        .chatMian {
+          padding: 16px 16px 16px 16px;
+          max-height: 550px;
+          overflow-y: auto;
+          margin-bottom: 160px;
+          .alenaMessage {
+            margin: 12px 0;
+          .aiMessage {
+            background: #f1f1f0;
+            padding: 18px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 7px;
+            
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0.02em;
+              text-align: left;
+            }
+          }
+          }
+
+          .listingMessage {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-end;
+            align-items: flex-end;
+            margin: 12px 0;
+            .listingMessageinner {
+                width: auto;
+                text-align: left;
+                .aiMessage {
+                    background: #7D5BB8;
+                    padding: 18px 15px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 7px;
+                    color: #fff;
+                }
+            }
+          }
+
+          .bottomMessgae {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            button.voiceBtn {
+                border: none;
+                background: transparent;
+                margin: 20px;
+            }
+            .messagetyper {
+                position: relative;
+                input.form-control {
+                    height: 66px;
+                    border-radius: 0;
+                }
+                button.messageSendBtn {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    background: transparent;
+                    border: none;
+                    transform: translateY(-50%);
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .siteagnetTab {
+        .tab_content {
+            .content-Wrapper {
+                padding: 15px;
+            }
+        }
+    }
+}

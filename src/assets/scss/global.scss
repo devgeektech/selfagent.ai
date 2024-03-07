@@ -316,12 +316,26 @@ textarea.form-control {
         background: #faf4fc;
       }
     }
+    .nav-link {
+      strong {
+        img.blackIcon {
+          opacity: 1;
+        }
+        img.gradientIcon {
+          opacity: 0;
+        }
+      }
+    }
     .nav-link.active {
       strong {
         img.blackIcon {
           opacity: 0;
         }
+        img.gradientIcon {
+          opacity: 1;
+        }
       }
+      
       span {
         background: linear-gradient(90deg, #e9088e 1.91%, #7c3aed 97.13%);
         -webkit-text-fill-color: transparent;
@@ -377,6 +391,10 @@ textarea.form-control {
 }
 /* Inner tabs end scss */
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1340px;
@@ -391,5 +409,10 @@ textarea.form-control {
 @media only screen and (max-width: 991px) {
   .innerpage {
     padding: 30px 0;
+  }
+  .leftTabsWrapper {
+    .nav-pills {
+      margin-bottom: 20px;
+    }
   }
 }
