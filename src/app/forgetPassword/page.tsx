@@ -36,7 +36,7 @@ export default function ForgetPassword() {
                   <Form.Label>Email address</Form.Label>
                   <Form.Control type="email" placeholder="Email address" /> 
                 </div>
-                <Button className="btnprimary w-100 login-btn mt-3">Sign up</Button>
+                <Button className="btnprimary w-100 login-btn mt-3">Reset</Button>
                 <div className="text-center mt-4 mb-2 sign-in">
                   <p>Remember your password? <Link href="/signIn">Login</Link></p>
                 </div>

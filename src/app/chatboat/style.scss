@@ -1,0 +1,161 @@
+header.header,
+footer.footer {
+  display: none;
+}
+
+.chatboatPage {
+    section.main-top-bar {
+        border-bottom: 1px solid #F1F1F0;
+        .inr-topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+    .chatSection {
+        padding: 20px;
+        height: calc(100vh - 180px);
+        overflow-y: auto;
+        .custmerSupport {
+            display: flex;
+            margin: 10px 0;
+            span {
+                background: #F1F1F0;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                border-radius: 6px;
+                padding: 16px;
+            }
+        }
+        .userChat {
+            margin: 10px 0;
+            display: flex;
+            justify-content: flex-end;
+            span {
+                background: #3B81F6;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                border-radius: 6px;
+                padding: 16px;
+                color: #fff;
+            }
+        }
+        .contactForm {
+            .formMain {
+                max-width: 340px;
+                padding: 20px;
+                background: #F1F1F0;
+                border-radius: 6px;
+                position: relative;
+                button.closeBtn {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: none;
+                    background: transparent;
+                }
+                h2 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+                button.btnprimary {
+                    border-radius: 6px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .messageTypeWrapper {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .messageTypeWrapperInner {
+            position: relative;
+            input.form-control {
+                border-radius: 0;
+                height: 66px;
+            }
+            button.sendBtn.btn.btn-primary {
+                position: absolute;
+                right: 30px;
+                bottom: 60px;
+                background: transparent;
+                border: none;
+            }
+        }
+        p {
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+
+.modal.successModal {
+    
+    .modal-header {
+        border-bottom: none;
+        padding: 0px;
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            background: transparent;
+        }
+    }
+    .iconWrapper {
+        span {
+            background: #4CB050;
+        }
+    }
+    .modal-body {
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .chatboatPage {
+        .chatSection {
+            .custmerSupport, .userChat {
+                span {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

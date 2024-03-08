@@ -25,7 +25,7 @@ export default function Singin() {
       </section>
 
       <section className="main-form">
-        <h2 className="title-heading">Get started for free</h2>
+        <h2 className="title-heading">Welcome Back</h2>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -38,11 +38,6 @@ export default function Singin() {
                 <div className="mb-3 position-relative">
                   <Form.Label>Password</Form.Label>
                   <Form.Control type="Password" placeholder="Password" /> 
-                  <Image src={Eyepass} alt=" Eyepass" className="position-absolute eye-icon"></Image>
-                </div>
-                <div className="mb-2 position-relative">
-                  <Form.Label>Confirm Password</Form.Label>
-                  <Form.Control type="Password" placeholder="Confirm Password" /> 
                   <Image src={Eyepass} alt=" Eyepass" className="position-absolute eye-icon"></Image>
                 </div>
                 <div className="text-end forget-pass mb-4">

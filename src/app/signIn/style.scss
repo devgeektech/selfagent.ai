@@ -144,12 +144,16 @@ section.main-form {
   }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1601px) {
   section.main-form {
     height: calc(100vh - 70px);
   }
 }
-
+// @media (max-width: 1600px) {
+//   section.main-form {
+//     padding: 80px 0;
+//   }
+// }
 @media (max-width: 767px) {
   section.main-form {
     .sign-up-form {
