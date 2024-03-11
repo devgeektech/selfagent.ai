@@ -1,0 +1,201 @@
+.chatinterfaceTab {
+    .chatwrapper {
+        padding: 35px 20px;
+        .chatFieldsWrapper {
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            button.resetBtn {
+                background: #494450;
+                color: #fff;
+                padding: 5px 25px;
+                border-radius: 6px;
+                border: none;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+            label {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            .input-group {
+                flex-direction: row-reverse;
+                input.form-control {
+                    border-radius: 6px !important;
+                }
+                span.input-group-text {
+                    background: transparent;
+                    border-radius: 0 6px 6px 0 !important;
+                    border: 0;
+                    position: absolute;
+                    right: 0;
+                    z-index: 6;
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+            p.secondsCount {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: rgba(0,0,0,0.39);
+            }
+        }
+        .chatBlock {
+            border: 1px solid #e7e7e7;
+            border-radius: 6px;
+            // height: 350px;
+            position: relative;
+            box-shadow: 0px 24px 32px 0px #33333308;
+            .topbar {
+              padding: 12px;
+              border: 1px solid #e7e7e7;
+              button {
+                border: none;
+                background: transparent;
+              }
+            }
+            .chatMian {
+              padding: 16px 16px 16px 16px;
+              max-height: 350px;
+              overflow-y: auto;
+              margin-bottom: 160px;
+              .alenaMessage {
+                margin: 12px 0;
+              .aiMessage {
+                background: #f1f1f0;
+                padding: 18px 15px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 7px;
+                
+                p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 27px;
+                  letter-spacing: 0.02em;
+                  text-align: left;
+                }
+              }
+              }
+    
+              .listingMessage {
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+                align-items: flex-end;
+                margin: 12px 0;
+                .listingMessageinner {
+                    width: auto;
+                    text-align: left;
+                    .aiMessage {
+                        background: #7D5BB8;
+                        padding: 18px 15px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 7px;
+                        color: #fff;
+                    }
+                }
+              }
+    
+              .bottomMessgae {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                button.voiceBtn {
+                    border: none;
+                    background: transparent;
+                    margin: 20px;
+                }
+                .messagetyper {
+                    position: relative;
+                    input.form-control {
+                        height: 66px;
+                        border-radius: 0;
+                    }
+                    button.messageSendBtn {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        background: transparent;
+                        border: none;
+                        transform: translateY(-50%);
+                    }
+                }
+              }
+            }
+          }
+    }
+    button.btnprimary {
+        border-radius: 4px;
+        border: none;
+        padding: 5px 25px;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+/* Media Query start */
+
+@media only screen and (max-width: 480px) {
+    .chatinterfaceTab {
+        .chatwrapper {
+            padding: 20px 10px;
+            .chatFieldsWrapper {
+                label {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+          
+                input.form-control, select.form-select {
+                    font-size: 14px;
+                }
+            }
+            .chatBlock {
+                .chatMian {
+                    padding: 10px;
+                    .alenaMessage {
+                        .aiMessage {
+                            padding: 10px;
+                            border-radius: 5px;
+                            .sms {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .listingMessage {
+                        .listingMessageinner {
+                            .aiMessage {
+                                padding: 10px;
+                                border-radius: 5px;
+                                .sms {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

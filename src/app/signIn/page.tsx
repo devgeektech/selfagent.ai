@@ -41,7 +41,7 @@ export default function Singin() {
                   <Image src={Eyepass} alt=" Eyepass" className="position-absolute eye-icon"></Image>
                 </div>
                 <div className="text-end forget-pass mb-4">
-                  <Link href="/">Forgot password?</Link>
+                  <Link href="/forgetPassword">Forgot password?</Link>
                 </div>
                 <Button className="btnprimary w-100 login-btn">Sign in</Button>
                 <div className="text-center mt-4 mb-2 sign-in">

@@ -1,0 +1,201 @@
+.PrivacyPage {
+  .priceBanner {
+    background-image: url("../../assets/images/priceBg.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    .priceBannerContent {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      text-align: center;
+      color: #fff;
+      h1 {
+        font-family: "PlusJakartaSans-ExtraBold";
+        font-size: 52px;
+        line-height: normal;
+        margin-bottom: 25px;
+      }
+      .breadcrumb {
+        justify-content: center;
+        margin-bottom: 0;
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin-bottom: 0;
+          padding: 0;
+          justify-content: center;
+          li {
+            padding-right: 50px;
+            position: relative;
+            &::after {
+              background-image: url("../../assets/images/arrowRight.svg");
+              background-size: 20px 20px;
+              width: 20px;
+              height: 20px;
+              content: "";
+              position: absolute;
+              right: 15px;
+              top: 10px;
+            }
+            a,
+            span {
+              font-size: 24px;
+              text-decoration: none;
+              color: #fff;
+            }
+            &:last-child {
+              padding-right: 0px;
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .privacyContent {
+    padding: 75px 0;
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Media Query start */
+
+@media only screen and (max-width: 991px) {
+  .PrivacyPage {
+    section.trusted_section {
+      ul {
+        max-width: 700px;
+        margin: auto;
+        li {
+          padding: 0 10px;
+          img {
+            height: 25px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .PrivacyPage {
+    .priceBanner {
+      height: 300px;
+      .priceBannerContent {
+        top: 60%;
+        h1 {
+          font-size: 32px;
+          margin-bottom: 15px;
+        }
+        .breadcrumb {
+          ul {
+            li {
+              &::after {
+                background-size: 15px 15px;
+                width: 15px;
+                height: 15px;
+                top: 5px;
+                background-repeat: no-repeat;
+              }
+              a,span {
+                font-size: 16px;
+              }
+            }
+          }
+      }
+      }
+  }
+    section.price_section {
+      padding: 30px 0;
+      .price_content {
+        h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 14px;
+          br {
+            display: none;
+          }
+        }
+      }
+      .price_wrapper {
+        .price_tab_content {
+          padding: 30px 0 0 0;
+        }
+      }
+    }
+    section.trusted_section {
+      padding: 30px 0;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          img {
+            height: 20px;
+          }
+        }
+      }
+    }
+    section.faq_section {
+      padding-bottom: 30px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .faq_wrapper {
+        .accordion-item {
+          h2.accordion-header {
+            button.accordion-button {
+              font-size: 14px;
+              padding: 12px 15px;
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              font-size: 14px;
+              line-height: 20px;
+            }
+        }
+        }
+    }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .PrivacyPage {
+    section.trusted_section {
+      ul {
+        flex-direction: column;
+        gap: 20px;
+        li {
+          img {
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

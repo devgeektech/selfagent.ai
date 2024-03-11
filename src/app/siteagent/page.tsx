@@ -14,8 +14,9 @@ import Dashboardtab from "@/components/dashboardTab/page";
 import Headertwo from "@/components/headertwo";
 import Integrationtab from "@/components/integrationTab/page";
 import Embedtab from "@/components/embedTab/page";
+import Delete from "@/components/delete";
 
-export default function Siteagent() {
+export default function Siteagent(props: any) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,6 +24,10 @@ export default function Siteagent() {
   const [showshare, setShowShare] = useState(false);
   const handleCloseShare = () => setShowShare(false);
   const handleShowShare = () => setShowShare(true);
+
+  const [showdelete, setShowDelete] = useState(false);
+  const deleteClose = () => setShowDelete(false);
+  const deleteShow = () => setShowDelete(true);
 
   return (
     <>
@@ -48,7 +53,7 @@ export default function Siteagent() {
                             Embed on site
                           </Nav.Link>
                           <Nav.Link eventKey="Share" onClick={handleShowShare}>Share</Nav.Link>
-                          <Nav.Link eventKey="Delete">Delete</Nav.Link>
+                          <Nav.Link eventKey="Delete" onClick={deleteShow}>Delete</Nav.Link>
                         </Nav.Item>
                       </Nav>
                     </Col>
@@ -76,7 +81,12 @@ export default function Siteagent() {
                         <Embedtab />
                       </Tab.Pane>
                       <Tab.Pane eventKey="Share"></Tab.Pane>
-                      <Tab.Pane eventKey="Delete"></Tab.Pane>
+                      <Tab.Pane eventKey="Delete">
+                        <div className="deleteTab text-center">
+                          <h1 className="text-center px-4">Do you want to Delete your Account ?</h1>
+                          <button className="btnprimary" onClick={deleteShow}>Delete Siteagent</button>
+                        </div>
+                      </Tab.Pane>
                     </Tab.Content>
                   </div>
                 </Col>
@@ -196,6 +206,20 @@ export default function Siteagent() {
         </Modal.Body>
       </Modal>
       {/* ShareSite modal Html End */}
+
+        {/* Delete Modal Html start        */}
+              { showdelete && (
+                <Delete
+                  
+                  title={"Delete AccountDelete Siteagent"}
+                  backdrop={true}
+                  DatasourecsDesc_1={"Are you sure you want to delete your siteagent? This action cannot be undone."}
+                  hide={deleteClose}
+                  show={deleteShow}
+                  Submit={"Make Public"}
+                />
+              )}
+        {/* Delete Modal Html end        */}
 
     </>
   );

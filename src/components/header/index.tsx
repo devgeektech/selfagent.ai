@@ -60,6 +60,7 @@ const openReset=()=>{
               <div className="btns_wrap">
                 <Button variant="btnSecondary" 
                 // onClick={signfun}
+                href="/signIn"
                 >
                   Sign In <Image src={loginIcon} alt='loginIcon'/>
                 </Button>
@@ -69,6 +70,7 @@ const openReset=()=>{
               <div className="btns_wrap">
                 <Button variant="btnSecondary" 
                 // onClick={signfun}
+                href="/signIn"
                 >
                   Sign In <Image src={loginIcon} alt='loginIcon'/>
                 </Button>

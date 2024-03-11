@@ -63,7 +63,21 @@
   }
 }
 
-
+.deleteTab {
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 50px 0;
+  }
+  button.btnprimary {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+  }
+}
 .iframeModal.modal {
   .modal-header {
     justify-content: center;

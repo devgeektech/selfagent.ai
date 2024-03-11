@@ -25,6 +25,8 @@ function Delete(props: any) {
         show={props.show}
         onHide={props.hide}
         keyboard={false}
+        // backdrop="static"
+        backdrop={props.Static}
         centered
       >
         <div className="iconWrapper text-center">
@@ -58,7 +60,7 @@ function Delete(props: any) {
             Cancel
           </Button>
           <Button className="btnprimary" variant="primary">
-            Submit
+            {props.Submit}
           </Button>
         </Modal.Footer>
       </Modal>

@@ -27,6 +27,7 @@ import yellowCard from "../../assets/images/connect-notion-modal.svg";
 
 
 import Genraltab from "@/components/settingTab/generalTab";
+
 import "./style.scss";
 import {
   Button,
@@ -45,6 +46,7 @@ import Webhookstab from "./webhooksTab";
 import Domaintab from "./domaintab";
 import Leadstab from "./leadsTab";
 import Securitytab from "./securityTab";
+import Chatinterfacetab from "./chatInterfaceTab";
 
 export default function Settingtab(props: any) {
   const [showdelete, setShowDelete] = useState(false);
@@ -70,7 +72,7 @@ export default function Settingtab(props: any) {
       <div className="settingTab">
         <div className="card-block">
           <div className="leftTabsWrapper">
-            <Tab.Container id="left-tabs" defaultActiveKey="General">
+            <Tab.Container id="left-tabs" defaultActiveKey="Chat">
               <Row>
                 <Col xl={2} lg={3}>
                   <Nav variant="pills" className="flex-column">
@@ -221,93 +223,7 @@ export default function Settingtab(props: any) {
                       <Modaltab/>
                     </Tab.Pane>
                     <Tab.Pane eventKey="Chat">
-                      <div className="tab_content websiteTab">
-                        <div className="title">
-                          <h2>Website</h2>
-                        </div>
-                        <div className="content-wrapper">
-                          <div className="websiteTab-content">
-                            <h4>Crawl</h4>
-                            <div className="position-relative link_btn">
-                              <Form.Control
-                                type="text"
-                                placeholder="https://selfsite.ai"
-                              />
-                              <button className="btnprimary">
-                                Fatch More link
-                              </button>
-                            </div>
-                            <div className="progress_percentage   my-3">
-                              <div className="d-flex justify-content-between mb-1">
-                                <p className="countChar mb-0">100%</p>
-                              </div>
-                              <ProgressBar
-                                variant="dark"
-                                now={100}
-                                className="custom-progress"
-                              />
-                            </div>
-                            <div className="progress-btm-desc">
-                              <p>
-                                This will crawl all the links starting with the
-                                URL (not including files on the website).
-                              </p>
-                            </div>
-                            <div className="crawl-and-or">
-                              <p>OR</p>
-                            </div>
-                            <h4>Submit Sitemap</h4>
-                            <div className="position-relative link_btn">
-                              <Form.Control
-                                type="text"
-                                placeholder="https://www.example.com/sitemap.xml"
-                              />
-                              <button className="btnprimary">
-                                Load additional sitemap
-                              </button>
-                            </div>
-                            <div className="crawl-and-or">
-                              <p>Included Links</p>
-                            </div>
-                            <div className="include-links-deletes">
-                              <div className="delete-all text-end">
-                                <Button onClick={deleteShow}>Delete all</Button>
-                              </div>
-                              {/* includes links row */}
-                              <div className="d-flex justify-content-start align-items-center gap-3 mb-3">
-                                <Form.Control
-                                  type="text"
-                                  placeholder="https://www.example.com/sitemap.xml"
-                                />
-                                <span>3961</span>
-                                <button
-                                  onClick={deleteShow}
-                                  className="deleteBtn"
-                                >
-                                  <Image src={deleteIcon} alt="deleteIcon" />
-                                </button>
-                              </div>
-                              <div className="d-flex justify-content-start align-items-center gap-3 mb-3">
-                                <Form.Control
-                                  type="text"
-                                  placeholder="https://www.example.com/sitemap.xml"
-                                />
-                                <span>3961</span>
-                                <button
-                                  onClick={deleteShow}
-                                  className="deleteBtn"
-                                >
-                                  <Image src={deleteIcon} alt="deleteIcon" />
-                                </button>
-                              </div>
-                              {/* end includes links row */}
-                            </div>
-                            <div className="Add_btn-Btm text-end">
-                              <Button>Add</Button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <Chatinterfacetab/>
                     </Tab.Pane>
                     <Tab.Pane eventKey="Security">
                       <Securitytab/>
@@ -343,6 +259,7 @@ export default function Settingtab(props: any) {
           inputfield={false}
           show={deleteShow}
           hide={deleteClose}
+          
         />
       )}
 

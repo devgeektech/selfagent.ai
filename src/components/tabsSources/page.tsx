@@ -429,6 +429,7 @@ export default function Datasourecs(props: any) {
           inputfield={false}
           show={deleteShow}
           hide={deleteClose}
+          Submit="Delete"
         />
       )}
 

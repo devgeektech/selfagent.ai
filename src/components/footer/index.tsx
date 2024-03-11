@@ -46,9 +46,9 @@ export default function footer() {
                 <li><Link href={"/"}>Affiliate program</Link></li>
                 <li><Link href={"/"}>Careers</Link></li>
                 <li><Link href={"/"}>Newsletter</Link></li>
-                <li><Link href={"/"}>Privacy policy</Link></li>
+                <li><Link href={"/privacypolicy"}>Privacy policy</Link></li>
                 <li><Link href={"/"}>Support</Link></li>
-                <li><Link href={"/"}>Terms of service</Link></li>
+                <li><Link href={"/termsofservice"}>Terms of service</Link></li>
               </ul>
             </div>
           </div>
