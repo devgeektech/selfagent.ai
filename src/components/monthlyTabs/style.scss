@@ -1,0 +1,349 @@
+.monthly_wrapper_Tabs {
+  width: 100%;
+  .price-grid {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    .price_block.free_block {
+      padding: 50px 50px 110px;
+      box-shadow: 1px 1px 10px 1px #eee;
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid #eee;
+      position: relative;
+      h2 {
+        background: linear-gradient(
+          to right top,
+          #c74ec7,
+          #b958d6,
+          #a762e4,
+          #916cf0,
+          #7575fb
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 52px;
+        font-weight: 800;
+        span {
+          -webkit-text-fill-color: #000;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          text-transform: capitalize;
+          font-size: 16px;
+          color: #000 !important;
+          background: transparent !important;
+          font-weight: 300;
+        }
+      }
+      i {
+        font-size: 18px;
+        margin: 0 0 10px;
+        display: inline-block;
+        color: #000;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      button {
+        height: 50px;
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        width: calc(100% - 100px) !important;
+        transform: translateX(-50%);
+        bottom: 40px;
+      }
+      .for-off {
+        span {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
+          color: #fff;
+          height: 60px;
+          width: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+      }
+    }
+  }
+  .btm-price-grid {
+    padding: 50px;
+    box-shadow: 1px 1px 10px 1px #eee;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    position: relative;
+    margin-top: 20px;
+    .price_block.free_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .for-lft {
+        width: calc(50% - 20px);
+      }
+      .for-ryt {
+        width: calc(50% - 20px);
+        ul {
+          li {
+            align-items: flex-start;
+            img {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      button {
+        height: 50px;
+        margin-top: 20px;
+        width: 50% !important;
+      }
+      hr {
+        width: 60%;
+      }
+    }
+  }
+}
+
+section.slider_section {
+    padding: 70px 0;
+    p.sliderDesc {
+      max-width: 575px;
+      font-family: "Inter-Regular";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: -40px;
+    }
+  
+    .swiperSliderWrapper {
+      .swiper-wrapper {
+        padding: 80px 0 40px 0;
+        .swiper-slide.swiper-slide-active, 
+        .swiper-slide {
+          .slideDesc {
+            p {
+              display: -webkit-box;
+              max-width: 100%;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+        }
+        .swiper-slide.swiper-slide-next {
+          .slideDesc {
+            p {
+              -webkit-line-clamp: inherit;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+        .swiperSlide {
+          padding: 20px;
+          box-shadow: 0px 10.933399px 20.560429px 0px
+            rgba(21, 21, 21, 0.1490196078);
+          border: 1px solid rgba(0, 0, 0, 0.1215686275);
+          background: #fff;
+          border-radius: 12px;
+          ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+          }
+          .slideDesc {
+            p {
+              font-family: "Inter-Regular";
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+          .userInfo {
+            display: flex;
+            gap: 20px;
+  
+            .name_designation {
+              h5 {
+                color: #2d2d2d;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: "Inter-Medium";
+              }
+              p {
+                font-family: "Inter-Regular";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 0;
+                color: #505050;
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-next {
+        top: 26px;
+        right: 30px;
+        &:after {
+          content: "";
+          position: absolute;
+          background-image: url("../../assets/images/FillwhiteArrowRghtIcon.svg");
+          width: 50px;
+          height: 50px;
+          background-size: 50px 50px;
+        }
+      }
+      .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../../assets/images/BorderArrowRghtIcon.svg");
+          width: 50px;
+          height: 50px;
+          background-size: 50px 50px;
+          opacity: 1;
+          display: block;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      .swiper-button-prev {
+        top: 26px;
+        left: auto;
+        right: 95px;
+        &:after {
+          content: "";
+          position: absolute;
+          background-image: url("../../assets/images/FillwhiteArrowLeftIcon.svg");
+          width: 50px;
+          height: 50px;
+          background-size: 50px 50px;
+        }
+      }
+      .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+        &::after {
+          display: none;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("../../assets/images/BorderArrowLeftIcon.svg");
+          width: 50px;
+          height: 50px;
+          background-size: 50px 50px;
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+  }
+
+@media (max-width: 767px) {
+  .monthly_wrapper_Tabs {
+    .price-grid {
+      grid-template-columns: repeat(1, 1fr);
+      .price_block.free_block {
+        padding: 50px 30px 110px;
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .btm-price-grid {
+      padding: 50px 30px;
+      .price_block.free_block {
+        gap: 20px;
+        flex-direction: column;
+        .for-lft,
+        .for-ryt {
+          width: 100%;
+        }
+        button {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media(min-width:768px) and (max-width: 1024px) {
+    .monthly_wrapper_Tabs {
+      .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+        .price_block.free_block {
+          padding: 50px 30px 110px;
+          ul {
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .btm-price-grid {
+        padding: 50px 30px;
+        .price_block.free_block {
+          gap: 20px;
+          flex-direction: column;
+          .for-lft,
+          .for-ryt {
+            width: 100%;
+          }
+          button {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
