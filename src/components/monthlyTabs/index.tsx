@@ -48,11 +48,11 @@ function Monthlytabs() {
           <div className="price_block free_block price_block starter_block">
             <h4 className="text-start">Starter</h4>
             <div className="for-off">
-              <span>50%</span>
+              <span>50%<br/>OFF</span>
             </div>
             <div className="priceBoxs text-start">
               <h2>
-                $40<span>/month</span>
+                <strong className="offerDis">$40</strong>$20<span>/month</span>
               </h2>
               <i>20 pages per site</i>
               <p>
@@ -90,11 +90,11 @@ function Monthlytabs() {
           <div className="price_block free_block price_block professional_block">
             <h4 className="text-start">Standard</h4>
             <div className="for-off">
-              <span>50%</span>
+              <span>50%<br/>OFF</span>
             </div>
             <div className="priceBoxs text-start">
               <h2>
-                $99<span>/month</span>
+              <strong className="offerDis">$49.5</strong>$99<span>/month</span>
               </h2>
               <i>80 pages per site</i>
               <p>
@@ -132,11 +132,11 @@ function Monthlytabs() {
           <div className="price_block free_block price_block professional_block">
             <h4 className="text-start">Pro</h4>
             <div className="for-off">
-              <span>50%</span>
+              <span>50%<br/>OFF</span>
             </div>
             <div className="priceBoxs text-start">
               <h2>
-                $499<span>/month</span>
+              <strong className="offerDis">$249.5</strong>$499<span>/month</span>
               </h2>
               <i>200 pages per site</i>
               <p>
@@ -186,11 +186,11 @@ function Monthlytabs() {
           <div className="price_block free_block price_block professional_block">
             <h4 className="text-start">Business</h4>
             <div className="for-off">
-              <span>50%</span>
+              <span>50%<br/>OFF</span>
             </div>
             <div className="priceBoxs text-start">
               <h2>
-                $999<span>/month</span>
+              <strong className="offerDis">$499.5</strong>$999<span>/month</span>
               </h2>
               <i>Unlimited pages per site</i>
               <i>Unlimited scans</i>

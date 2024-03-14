@@ -60,8 +60,8 @@ export default function Pricing() {
                   <br /> of all sizes
                 </h2>
                 <p>
-                  Choose an affordable plan that’s packed with the best features
-                  <br /> for engaging your audience.
+                    Shopify websites get 50% off for the next 30 days for all tiers! (purchased through Shopify store)
+                  <br /> All tiers get 3 months free when paid annually.
                 </p>
               </div>
             </div>

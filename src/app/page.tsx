@@ -55,6 +55,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css";
 import { Navigation, Autoplay } from "swiper/modules";
+import TimeCount from "@/components/timeCount";
 // import "swiper/css/pagination";
 // import { Pagination } from "swiper/modules";
 
@@ -101,6 +102,10 @@ export default function () {
         </div>
       </section>
 
+
+        <TimeCount />
+
+        
       <section className="logosWrapper">
         <div className="container">
           <h3 className="text-center">
