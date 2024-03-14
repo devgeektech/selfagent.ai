@@ -63,7 +63,7 @@ function TimeCount() {
             <div className="text-center">
                 <Image src={Shopify} alt="Shopify"></Image>
               </div>
-              <p>50% off for all Shopify websites. Special offer ends</p>
+              <p>50% off for all Shopify websites. Special offer ends!</p>
               <h3>
                 <span>
                   <strong>{timer["days"]} :</strong> Days
