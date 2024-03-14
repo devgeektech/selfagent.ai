@@ -162,6 +162,24 @@
   }
 }
 
+.professional_block {
+  strong.popular {
+    background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
+    padding: 15px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+}
+
 section.slider_section {
     padding: 70px 0;
     p.sliderDesc {
@@ -368,6 +386,24 @@ section.slider_section {
     }
   }
 @media only screen and (max-width: 480px) {
+  .PricePage {
+    section.price_section {
+      .price_wrapper {
+        .price_tab_buttons {
+          .nav.nav-pills {
+            .nav-item {
+              span.disPer {
+                  font-size: 10px;
+                  right: -40px;
+                  font-size: 10px;
+                  top: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .monthly_wrapper_Tabs {
     .price-grid {
       .price_block.free_block {

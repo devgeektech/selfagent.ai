@@ -13,10 +13,21 @@
       text-align: center;
       color: #fff;
       h1 {
-        font-family: "PlusJakartaSans-ExtraBold";
-        font-size: 52px;
+        font-size: 30px;
         line-height: normal;
         margin-bottom: 25px;
+        font-weight: 400;
+        font-family: "PlusJakartaSans-SemiBold";
+        button {
+          background: transparent;
+          color: #fff;
+          border: none;
+          span {
+            font-size: 30px;
+            text-transform: capitalize;
+            border-bottom: 3px solid #7c3aed;
+          }
+        }
       }
       .breadcrumb {
         justify-content: center;
@@ -39,11 +50,11 @@
               content: "";
               position: absolute;
               right: 15px;
-              top: 10px;
+              top: 5px;
             }
             a,
             span {
-              font-size: 24px;
+              font-size: 18px;
               text-decoration: none;
               color: #fff;
             }
@@ -89,6 +100,18 @@
             #916cf0,
             #7575fb
           );
+          .nav-item {
+            position: relative;
+            span.disPer {
+              position: absolute;
+              right: -123px;
+              white-space: nowrap;
+              top: 5px;
+              color: #E9088E;
+              font-size: 12px;
+              font-weight: 700;
+            }
+          }
           a.nav-link.active {
             background-color: #000;
           }
@@ -194,8 +217,15 @@
         top: 60%;
         width: 100%;
         h1 {
-          font-size: 32px;
+          font-size: 20px;
           margin-bottom: 15px;
+          padding: 0 15px;
+          span {
+            font-size: 20px !important;
+            margin-bottom: 15px;
+            padding: 0px;
+            border-bottom: 2px solid #7c3aed;
+          }
         }
         .breadcrumb {
           ul {

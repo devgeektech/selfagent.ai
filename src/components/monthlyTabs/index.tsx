@@ -1,14 +1,17 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 import cricleTick from "../../assets/images/cricleTick.svg";
 import Link from "next/link";
-import { Button } from "react-bootstrap";
+import { Button, Form, Modal } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 function Monthlytabs() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div className="monthly_wrapper_Tabs">
@@ -88,6 +91,7 @@ function Monthlytabs() {
             <Button className="btnprimary btnget w-100">Get Started</Button>
           </div>
           <div className="price_block free_block price_block professional_block">
+            <strong className="popular">popular</strong>
             <h4 className="text-start">Standard</h4>
             <div className="for-off">
               <span>50%<br/>OFF</span>
@@ -245,7 +249,7 @@ function Monthlytabs() {
                 customize anything
               </li>
             </ul>
-            <Button className="btnprimary btnget w-100">Contact us</Button>
+            <Button onClick={handleShow} className="btnprimary btnget w-100">Contact us</Button>
           </div>
         </div>
         <div className="btm-price-grid">
@@ -276,6 +280,38 @@ function Monthlytabs() {
           </div>
         </div>
       </div>
+
+
+      {/* Modal Start */}
+      <Modal show={show} onHide={handleClose} centered className="contactusModal">
+        <Modal.Header closeButton>
+          <Modal.Title>Contact Us</Modal.Title>
+        </Modal.Header>
+        <Form>
+          <Modal.Body>
+            <Form.Group className="mb-3">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" placeholder="Enter your Name" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control type="email" placeholder="Enter your email" />
+            </Form.Group>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button  variant="secondary" onClick={handleClose}>
+              Cancel
+            </Button>
+            <Button className="btnprimary" onClick={handleClose}>
+              Submit
+            </Button>
+          </Modal.Footer>
+        </Form>
+      </Modal>
+      {/* Modal End */}
+
+
+
     </>
   );
 }

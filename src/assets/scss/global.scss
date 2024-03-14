@@ -417,6 +417,24 @@ input[type="range"]::-webkit-slider-thumb {
   ) !important;
 }
 
+
+.contactusModal {
+  .modal-header {
+    justify-content: center;
+    .modal-title.h4 {
+      font-size: 30px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #e9088e 1.91%, #7c3aed 97.13%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    }
+  }
+}
+
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1340px;
