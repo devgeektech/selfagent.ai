@@ -16,43 +16,39 @@ function TimeCount() {
     seconds: "00",
   });
 
-  const startTimer = () => {
-    const endTime = moment().endOf("month");
-
-    const updateTimer = () => {
-      const now = moment();
-      const duration = moment.duration(endTime.diff(now));
-      const days = duration.days().toString().padStart(2, "0");
-      const hours = duration.hours().toString().padStart(2, "0");
-      const minutes = duration.minutes().toString().padStart(2, "0");
-      const seconds = duration.seconds().toString().padStart(2, "0");
-      setTimer({
-        days,
-        hours,
-        minutes,
-        seconds,
-      });
-    };
-
-    updateTimer(); // Update timer immediately
-    const id = setInterval(updateTimer, 1000);
-    Ref.current = id;
-
-    return () => {
-      if (Ref.current) clearInterval(Ref.current);
-    };
-  };
+  
 
   useEffect(() => {
     // clearInterval(Ref.current);
+    const currentDate = moment();
 
-    return startTimer();
+    // Calculate the date 30 days from now
+    const futureDate = currentDate.add(30, 'days');
+
+    // Update remaining time every second
+    const interval = setInterval(() => {
+      const now = moment();
+      const difference = futureDate.diff(now);
+
+      // Check if the future date has been reached
+      if (difference <= 0) {
+        clearInterval(interval);
+        setTimer({ days: '00', hours: '00', minutes: '00',seconds:'00' });
+      } else {
+        const duration = moment.duration(difference);
+        setTimer({
+          days: duration.days(),
+          hours: duration.hours(),
+          minutes: duration.minutes(),
+          seconds: duration.seconds(),
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  const onClickReset = () => {
-    clearInterval(Ref.current);
-    startTimer();
-  };
+
 
   return (
     <section className="time-counters">
@@ -62,8 +58,8 @@ function TimeCount() {
             <div className="inr-time-counter">
             <div className="text-center">
                 <Image src={Shopify} alt="Shopify"></Image>
-              </div>
-              <p>50% off for all Shopify websites. Special offer ends!</p>
+              </div> 
+              <p>50% off for Product Hunt launch. Special offer ends!</p>
               <h3>
                 <span>
                   <strong>{timer["days"]} :</strong> Days
