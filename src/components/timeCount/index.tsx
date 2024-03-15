@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
+import ProductHuntLogo from "../../assets/images/ProductHuntLogo.png";
 import ReactDOM from "react-dom";
 import "./style.scss";
 import moment from "moment";
 import Image from "next/image";
-import Shopify from "../../assets/images/shopify-logo.png";
 
 function TimeCount() {
   const Ref: any = useRef<number | null>(null);
@@ -15,8 +15,6 @@ function TimeCount() {
     minutes: "00",
     seconds: "00",
   });
-
-  
 
   useEffect(() => {
     // clearInterval(Ref.current);
@@ -57,7 +55,7 @@ function TimeCount() {
           <div className="col-md-12">
             <div className="inr-time-counter">
             <div className="text-center">
-                <Image src={Shopify} alt="Shopify"></Image>
+                <Image src={ProductHuntLogo} alt="Product_Hunt_Logo"></Image>
               </div> 
               <p>50% off for Product Hunt launch. Special offer ends!</p>
               <h3>
