@@ -90,7 +90,7 @@ function Monthlytabs() {
             </ul>
             <Button className="btnprimary btnget w-100">Get Started</Button>
           </div>
-          <div className="price_block free_block price_block professional_block">
+          <div className="price_block free_block price_block professional_block standardPlan">
             <strong className="popular">popular</strong>
             <h4 className="text-start">Standard</h4>
             <div className="for-off">
@@ -133,7 +133,7 @@ function Monthlytabs() {
             </ul>
             <Button className="btnprimary btnget w-100">Get Started</Button>
           </div>
-          <div className="price_block free_block price_block professional_block">
+          <div className="price_block free_block price_block professional_block ">
             <h4 className="text-start">Pro</h4>
             <div className="for-off">
               <span>50%<br/>OFF</span>
