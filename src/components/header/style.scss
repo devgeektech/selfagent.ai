@@ -1,8 +1,12 @@
 header.header {
     width: 100%;
-    border-bottom: 1px solid #E4E4E74A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
     nav.navbar {
-        background: #fff !important;
+        background: transparent !important;
         padding: 25px 0;
         a.navbar-brand {
             img {
@@ -19,10 +23,10 @@ header.header {
         }
             button.navbar-toggler.collapsed {
                 span.navbar-toggler-icon {
-                    background-image: url('../../assets/images/MenuIcon.svg');
-                    width: 38px;
-                    height: 26px;
-                    background-size: 38px 26px;
+                    background-image: url('../../assets/images/MenuIcon.png');
+                    width: 18px !important;
+                    height: 12px !important;
+                    background-size: 24px 24px !important;
                     background-clip: content-box;
                 }
             }
@@ -30,10 +34,10 @@ header.header {
                 border: none;
                 padding: 0px;
                 span.navbar-toggler-icon {
-                    background-image: url('../../assets/images/MenuCrossicon.svg');
-                    width: 20px;
-                    height: 20px;
-                    background-size: 20px 20px;
+                    background-image: url('../../assets/images/crossIcon.png');
+                    width: 18px !important;
+                    height: 12px !important;
+                    background-size: 24px 24px !important;
                     background-clip: content-box;
                 }
                 &:focus {
@@ -43,56 +47,79 @@ header.header {
         
         .navbar-nav {
             a.nav-link {
-                color: #18181B;
-                font-family: 'Inter-Regular';
+                color: #fff;
+                font-family: 'Geliat-Medium';
                 font-size: 14px;
                 margin: 0 30px;
                 line-height: 20px;
             }
             .dropdown-toggle {
                 &::after {
-                    background-image: url('../../assets/images/angleBlackBottom.svg');
-                    width: 15px;
-                    height: 15px;
-                    background-size: 15px 18px;
+                    background-image: url('../../assets/images/angleDown.png');
+                    width: 9px;
+                    height: 6px;
+                    background-size: 9px 6px;
                     border: none;
                     position: absolute;
-                    top: 12px
+                    top: 16px
                 }
             }
         }
     }
     .btns_wrap {
-        padding-left: 30px;
         position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 2px;
-            height: 20px;
-            background: #fff;
-            top: 8px;
-        }
         .btn-btnSecondary {
-            font-size: 15px;
-            border-radius: 8px;
-            font-family: 'PlusJakartaSans-SemiBold';
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18.88px;
+                text-align: center;
+                border-radius: 8px;
+                font-family: "Geliat-Medium";
+                padding: 13px 22px;
+                background: #fff;
+                color: #5E1DDC;
+                border: 1px solid #5E1DDC;
+            
+            svg {
+                margin-left: 8px;
+            }
+            &:hover {
+                color: #fff;
+                border: 1px solid #5E1DDC;
+                background: #5E1DDC;
+                svg, path {
+                    fill: #fff;
+                    color: #fff;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
         }
         button.btnprimary.btn.btn-primary {
-            margin-left: 12px;
+            margin-left: 8px;
             border-radius: 8px;
+            padding: 10px 18px;
+            font-family: "Geliat-Medium";
+            svg {
+                margin-left: 8px;
+            }
+            &:hover {
+                color: #fff;
+                svg, path {
+                    fill: #fff;
+                    color: #fff;
+                    transition: 0.3s all ease-in-out;
+                }
+            } 
         }
     }
 }
-
-
 /* Media Query start */
-
-
 @media only screen and (max-width: 991px) {
     header.header {
         nav.navbar {
+            .btns_wrap {
+                display: none;
+             }
             .navbar-collapse {
                 background-color: #fff;
                 position: absolute;
@@ -103,6 +130,7 @@ header.header {
                 .btns_wrap {
                     display: block;
                     padding-bottom: 30px;
+                  
                 }
                 .navbar-nav {
                     padding: 40px 0 0 22px;
@@ -117,7 +145,6 @@ header.header {
                     }
                 }
             }
-            
         }
     
         .navbar-nav {
@@ -137,9 +164,39 @@ header.header {
 
 @media only screen and (max-width: 767px) {
     header.header {
+        nav.navbar {
+            .navbar-nav {
+                a.nav-link {
+                    margin: 0 10px;
+                }
+            }
+            .navbar-collapse {
+                .btns_wrap {
+                    margin-left: 15px;
+                    button.btnprimary.btn.btn-primary, .btn-btnSecondary {
+                        margin-left: 5px;
+                        border-radius: 5px;
+                        padding: 8px 15px;
+                        line-height: 23px;
+                        width:auto;
+                    }
+                }
+            }
+        }
         a.navbar-brand {
             img {
                 max-width: 178px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    header.header {
+        nav.navbar {
+            .navbar-collapse {
+                .navbar-nav {
+                    padding: 20px 0;
+                }
             }
         }
     }

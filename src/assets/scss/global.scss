@@ -1,57 +1,49 @@
 @font-face {
-  font-family: "PlusJakartaSans-ExtraBold";
-  src: url("../fonts/PlusJakartaSans-ExtraBold.eot");
-  src: url("../fonts/PlusJakartaSans-ExtraBold.eot?#iefix")
+  font-family: "Geliat-Bold";
+  src: url("../fonts/Geliat-bold.eot");
+  src: url("../fonts/Geliat-bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff"),
-    url("../fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype"),
-    url("../fonts/PlusJakartaSans-ExtraBold.svg#PlusJakartaSans-ExtraBold")
+    url("../fonts/Geliat-bold.woff") format("woff"),
+    url("../fonts/Geliat-bold.ttf") format("truetype"),
+    url("../fonts/Geliat-bold.svg#Geliat-Bold")
       format("svg");
-  font-weight: ExtraBold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter-Medium";
-  src: url("../fonts/Inter-Medium.eot");
-  src: url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Inter-Medium.woff") format("woff"),
-    url("../fonts/Inter-Medium.ttf") format("truetype"),
-    url("../fonts/Inter-Medium.svg#Inter-Medium") format("svg");
-  font-weight: Medium;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter-Bold";
-  src: url("../fonts/Inter-Bold.eot");
-  src: url("../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Inter-Bold.woff") format("woff"),
-    url("../fonts/Inter-Bold.ttf") format("truetype"),
-    url("../fonts/Inter-Bold.svg#Inter-Bold") format("svg");
   font-weight: Bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "PlusJakartaSans-SemiBold";
-  src: url("../fonts/PlusJakartaSans-SemiBold.eot");
-  src: url("../fonts/PlusJakartaSans-SemiBold.eot?#iefix")
+  font-family: "Geliat-Semibold";
+  src: url("../fonts/Geliat-semibold.eot");
+  src: url("../fonts/Geliat-semibold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/PlusJakartaSans-SemiBold.woff") format("woff"),
-    url("../fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
-    url("../fonts/PlusJakartaSans-SemiBold.svg#PlusJakartaSans-SemiBold")
+    url("../fonts/Geliat-semibold.woff") format("woff"),
+    url("../fonts/Geliat-semibold.ttf") format("truetype"),
+    url("../fonts/Geliat-semibold.svg#Geliat-Semibold")
       format("svg");
-  font-weight: SemiBold;
+  font-weight: Semibold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Inter-Regular";
-  src: url("../fonts/Inter-Regular.eot");
-  src: url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Inter-Regular.woff") format("woff"),
-    url("../fonts/Inter-Regular.ttf") format("truetype"),
-    url("../fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-family: "Geliat-Medium";
+  src: url("../fonts/Geliat-medium.eot");
+  src: url("../fonts/Geliat-medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Geliat-medium.woff") format("woff"),
+    url("../fonts/Geliat-medium.ttf") format("truetype"),
+    url("../fonts/Geliat-medium.svg#Geliat-Medium") format("svg");
+  font-weight: Medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geliat-Regular";
+  src: url("../fonts/Geliat-regular.eot");
+  src: url("../fonts/Geliat-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Geliat-regular.woff") format("woff"),
+    url("../fonts/Geliat-regular.ttf") format("truetype"),
+    url("../fonts/Geliat-regular.svg#Geliat-Regular") format("svg");
   font-weight: Regular;
   font-style: normal;
 }
+
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(0, 0, 0, 0.39);
@@ -68,10 +60,13 @@
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.39);
 }
-
+body {
+  overflow-x: hidden;
+}
 .btnprimary {
-  background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
-  border-color: #b022c0;
+  // background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
+  background: #5E1DDC;
+  border-color: #5E1DDC;
   border-radius: 12px;
   color: #fff;
   &:hover,
@@ -79,35 +74,35 @@
   &:active,
   &:visited,
   :not(.btn-check) + .btn:active {
-    opacity: 0.5;
-    border-color: #b022c0;
+    // opacity: 0.5;
+    border-color: #5E1DDC;
+    background: #5E1DDC;
   }
 }
 
 .btn-btnSecondary {
-  background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  // background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
+  background-color: #fff;
+  color: #5E1DDC;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // background-clip: text;
   border-radius: 12px;
-  border: 1px solid #b022c0;
+  border: 1px solid #5E1DDC;
   &:hover,
   &:focus,
   &:active,
   &:visited,
   :not(.btn-check) + .btn:active {
-    background: linear-gradient(90deg, #e9088e -1.47%, #7c3aed 100%);
-    color: #fff !important;
-    background-clip: text;
-    border-color: #b022c0;
+    border: 1px solid #5E1DDC;
   }
 }
 a,
 button {
   transition: 0.3s all ease-in-out;
   &:hover {
-    opacity: 0.6;
+    // opacity: 0.6;
   }
 }
 .form-check-input {
@@ -134,40 +129,41 @@ button {
 h2 {
   margin-bottom: 20px;
   span {
-    font-family: "Inter-Medium";
+    font-family: "Geliat-Bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    background: linear-gradient(90deg, #e9088e 1.91%, #7c3aed 97.13%);
+    background: linear-gradient(90deg, #E530FE -1.47%, #4D0BCE 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    text-transform: uppercase;
   }
 }
 h3 {
   margin-bottom: 20px;
   span {
-    font-family: "Inter-Medium";
+    font-family: "Geliat-Bold";
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    background: linear-gradient(90deg, #e9088e 1.91%, #7c3aed 97.13%);
+    // background: linear-gradient(90deg, #e9088e 1.91%, #7c3aed 97.13%);
+    background: linear-gradient(90deg, #E530FE -1.47%, #4D0BCE 100%);
+
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
 }
 button {
   span {
-    font-family: "Inter-Medium";
+    font-family: "Geliat-Bold";
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
@@ -305,7 +301,7 @@ textarea.form-control {
       }
       span {
         margin-left: 10px;
-        font-family: "Inter-Medium";
+        font-family: "Geliat-Medium";
         font-size: 14px;
         font-weight: 500;
         line-height: 18px;
@@ -359,7 +355,7 @@ textarea.form-control {
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-        font-family: "Inter-Medium";
+        font-family: "Geliat-Medium";
       }
     }
     .content-wrapper {

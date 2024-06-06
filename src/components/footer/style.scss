@@ -3,44 +3,36 @@ footer.footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 125px 0 45px 0;
+    padding: 65px 0 45px 0;
     .selfsite {
         width: calc(100% - 60px);
-        background: linear-gradient(90deg, #E9088E 1.91%, #7C3AED 97.13%);
         margin: auto;
         text-align: center;
         border-radius: 20px;
-        padding: 60px;
-        margin-bottom: 110px;
+        margin-bottom: 80px;
         .selfsite_inner {
             color: #fff;
             h2 {
                 font-size: 48px;
                 line-height: 60px;
-                font-family: 'PlusJakartaSans-ExtraBold';
-                margin-bottom: 0;
+                font-family: "Geliat-Medium";
             }
             p {
                 font-size: 20px;
                 line-height: 28px;
-                font-family: 'Inter-Medium';
+                font-family: "Geliat-Regular";
                 margin: 35px 0;
             }
-            button.whitebtn.btn.btn-primary {
-                background-color: #fff;
-                border-color: #fff;
-                color: #a762e4;
-                border-radius: 12px;
-                max-width: 270px;
-                font-size: 20px;
-                line-height: 28px;
-                width: 100%;
-                font-family: 'PlusJakartaSans-SemiBold';
-                padding: 16px 10px;
-                img {
-                    margin-left: 10px;
+            button.btnprimary.btn.btn-primary {
+                padding: 18px 38px;
+                font-size: 16px;
+                line-height: 18px;
+                font-family: "Geliat-Medium";
+                &:hover {
+                    background: #5E1DDC;
+                    border-color: #5E1DDC;
                 }
-            }    
+            }   
         }
     }
     .logo_wrapper {
@@ -50,8 +42,21 @@ footer.footer {
             height: auto;
         }
     }
+    .logoText {
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: #0D6EFD;
+            font-family: "Geliat-Regular";
+        }
+    }
 
     .footerMenu {
+        ul.mainMenu {
+            margin: 32px 0 22px 0;
+        }
         ul {
             padding: 0;
             list-style: none;
@@ -63,25 +68,36 @@ footer.footer {
             li {
                 padding: 10px 0;
                 a {
-                    color: #000000;
+                    color: #fff;
                     text-decoration: none;
                     font-size: 14px;
-                    font-family: 'Inter-Medium';
+                    font-family: "Geliat-Regular";
+                    transition: 0.5s all ease-in-out;
+                    &:hover {
+                        opacity: 0.5;
+                    }
                 }
             }
         }
     }
-    .copyright {
-        p {
-            color: #000000;
-            margin-bottom: 0;
-            font-size: 14px;
-            font-family: 'Inter-Medium';
-        }
-    }
+    
+}
+
+.copyright {
+        
+    p {
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-family: "Geliat-Regular";
+    
+}
 }
 
 @media only screen and (max-width: 1199px) {
+    footer.footer {
+        padding: 50px 0;
+      }
     .logo_wrapper {
         a {
             img {
@@ -114,9 +130,8 @@ footer.footer {
             ul {
                 margin-bottom: 0px;
                 gap: 10px;
-                justify-content: flex-start;
-                flex-direction: column;
-                align-items: flex-start;
+                justify-content: center;
+                flex-wrap: wrap;
             }
             ul.socialMenu {
                 flex-direction: row;
@@ -124,23 +139,18 @@ footer.footer {
         }
         .copyright {
             margin: 40px 0;
-            p {
-                text-align: left;
-            }
         }
     }
 }
 @media only screen and (max-width: 767px) {
     footer.footer {
-        padding-top: 0;
-        .logo_wrapper {
-            text-align: left;
-            margin-bottom: 0px;
-            // a {
-            //     img {
-            //         max-width: fit-content;
-            //     }
-            // }
+        // padding-top: 0;
+        .selfsite {
+            .selfsite_inner {
+                button.btnprimary.btn.btn-primary {
+                    padding: 14px 20px;
+                }
+            }
         }
         .container.trySelf {
             padding-left: 0;
@@ -157,7 +167,7 @@ footer.footer {
             .selfsite {
                 width: 100%;
                 border-radius: 0px;
-                padding: 40px;
+                padding: 15px;
                 margin-bottom: 0px;
                 .selfsite_inner {
                     h2 {

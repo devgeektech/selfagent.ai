@@ -1,37 +1,17 @@
 .PricePage {
   .priceBanner {
-    background-image: url("../../assets/images/priceBg.jpg");
-    background-position: center center;
+    background-image: url("../../assets/images/pricingBg.png");
+    background-position: top center;
     background-size: cover;
-    height: 450px;
     position: relative;
+    padding: 180px 0 25% 0;
     .priceBannerContent {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      text-align: center;
       color: #fff;
-      h1 {
-        font-size: 30px;
-        line-height: normal;
-        margin-bottom: 25px;
-        font-weight: 400;
-        font-family: "PlusJakartaSans-SemiBold";
-        button {
-          background: transparent;
-          color: #fff;
-          border: none;
-          span {
-            font-size: 30px;
-            text-transform: capitalize;
-            border-bottom: 3px solid #7c3aed;
-          }
-        }
-      }
+      max-width: 960px;
+      margin: auto;
       .breadcrumb {
         justify-content: center;
-        margin-bottom: 0;
+        margin-bottom: 32px;
         ul {
           display: flex;
           align-items: center;
@@ -57,6 +37,10 @@
               font-size: 18px;
               text-decoration: none;
               color: #fff;
+              font-family: "Geliat-Medium";
+            }
+            span {
+              color: rgba(229, 48, 254, 1);
             }
             &:last-child {
               padding-right: 0px;
@@ -67,39 +51,67 @@
           }
         }
       }
+      h1 {
+        font-size: 80px;
+        line-height: 88px;
+        margin-bottom: 48px;
+        font-family: "Geliat-Semibold";
+        span {
+          color: #4D0BCE;
+        }
+      }
+      .offerText {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44.8px;
+        margin-bottom: 30px;
+        font-family: "Geliat-Regular";
+      }
+      button.btn-btnSecondary {
+        border: 1px solid var(--Button-purple, rgba(94, 29, 220, 1));
+        color: rgba(94, 29, 220, 1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.88px;
+        border-radius: 12px;
+        padding: 18px 24px; 
+        font-family: "Geliat-Medium";
+        svg, path {
+          margin-left: 5px;
+          color: rgba(94, 29, 220, 1);
+          fill: rgba(94, 29, 220, 1);
+        }
+      }
     }
   }
   section.price_section {
-    padding: 100px 0 180px 0;
-    background-image: url("../../assets/images/price_bg.jpg");
-    background-position: center center;
-    background-size: cover;
+    padding: 0px 0 60px 0;
+    margin-top: -150px;
+    position: relative;
     .price_content {
       h2 {
         font-size: 42px;
-        font-family: "PlusJakartaSans-ExtraBold";
-        color: #000;
+        font-family: "Geliat-Semibold";
+        color: rgba(15, 9, 27, 1);
+        span {
+          font-size: 42px;
+          font-family: "Geliat-Semibold";
+        }
       }
-
       p {
-        font-size: 20px;
-        font-family: "PlusJakartaSans-SemiBold";
-        color: #000;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: "Geliat-Regular";
+        color: rgba(15, 9, 27, 1);
       }
     }
     .price_wrapper {
+      margin-top: 50px;
       .price_tab_buttons {
         .nav.nav-pills {
           padding: 8px;
           border-radius: 100px;
-          background: linear-gradient(
-            to right top,
-            #c74ec7,
-            #b958d6,
-            #a762e4,
-            #916cf0,
-            #7575fb
-          );
+          border: 1px solid rgba(94, 29, 220, 0.2);
           .nav-item {
             position: relative;
             span.disPer {
@@ -109,41 +121,65 @@
               top: 5px;
               color: #E9088E;
               font-size: 12px;
-              font-weight: 700;
+              font-weight: 500;
+              font-family: "Geliat-Medium";
             }
           }
-          a.nav-link.active {
-            background-color: #000;
-          }
-          a.nav-link {
-            color: #fff;
+          .pillsWrap {
+            display: flex;
+            flex-wrap: wrap;
             border-radius: 100px;
-            padding: 7px 22px;
-            &:hover {
-              opacity: 1;
+            background-color: rgb(94, 29, 220, 0.15);
+            a.nav-link.active {
+              background: var(--Button-purple, rgba(94, 29, 220, 1));
+              color: #fff;
+              box-shadow: 2px 0px 4px 2px rgba(64, 19, 151, 0.16);
+            }
+            a.nav-link {
+              color: rgba(15, 9, 27, 1);
+              border-radius: 100px;
+              padding: 13px 34px;
+              font-weight: 600;
+              font-family: "Geliat-Semibold";
+              &:hover {
+                opacity: 1;
+              }
             }
           }
         }
       }
       .price_tab_content {
-        padding: 80px 0 0 0;
+        padding: 50px 0 0 0;
       }
     }
   }
   section.trusted_section {
-    padding: 60px 0;
+    padding: 60px 0 120px;
     h2 {
-      font-size: 42px;
       color: #2f2f2f;
-      margin-bottom: 60px;
-      font-family: "Inter-Bold";
+      
+      font-family: "Geliat-Medium";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      
+      span {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+      }
     }
     ul {
       display: flex;
       align-items: center;
       justify-content: center;
       list-style: none;
-      padding: 0;
+      border-top: 1px solid rgba(15, 9, 27, 0.12);
+      border-bottom: 1px solid rgba(15, 9, 27, 0.12);
+      padding: 24px 0;
+      margin-top: 32px;
+      max-width: 1000px;
+      margin: auto;
       li {
         padding: 0 25px;
       }
@@ -155,7 +191,7 @@
       font-size: 42px;
       color: #2f2f2f;
       margin-bottom: 60px;
-      font-family: "Inter-Bold";
+      font-family: "Geliat-Semibold";
     }
     .faq_wrapper {
       max-width: 900px;
@@ -171,7 +207,7 @@
             border-radius: 7px !important;
             box-shadow: none;
             font-size: 16px;
-            font-family: "Inter-Bold";
+            font-family: "Geliat-Medium";
             padding: 12px 15px;
           }
         }
@@ -179,7 +215,7 @@
           border-top: none !important;
           .accordion-body {
             color: #5c5c5c;
-            font-family: "PlusJakartaSans-SemiBold";
+            font-family: "Geliat-Medium";
             font-size: 16px;
             line-height: 22px;
           }
@@ -188,12 +224,54 @@
     }
   }
 }
+.logoSwiper
+{
+  display: none;
+}
 
 /* Media Query start */
 
+
+@media only screen and (max-width: 1024px) {
+  .PricePage {
+    section.price_section {
+      padding: 0px 0 50px 0;
+      ul {
+        padding: 30px 0;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 991px) {
   .PricePage {
+    .priceBanner {
+      padding: 150px 0 75px 0;
+      .priceBannerContent {
+        h1 {
+          font-size: 52px;
+          line-height: 60px;
+          margin-bottom: 30px;
+        }
+        .offerText {
+          font-size: 22px;
+          line-height: 34px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    section.price_section {
+      margin-top: 0px;
+      .price_content {
+        h2 {
+          font-size: 32px;
+          span {
+            font-size: 32px;
+          }
+        }
+      }
+    }
     section.trusted_section {
+
       ul {
         max-width: 700px;
         margin: auto;
@@ -212,23 +290,26 @@
 @media only screen and (max-width: 767px) {
   .PricePage {
     .priceBanner {
-      height: 300px;
+      
       .priceBannerContent {
-        top: 60%;
         width: 100%;
         h1 {
-          font-size: 20px;
+          font-size: 42px;
           margin-bottom: 15px;
           padding: 0 15px;
           span {
-            font-size: 20px !important;
+            font-size: 42px !important;
             margin-bottom: 15px;
             padding: 0px;
-            border-bottom: 2px solid #7c3aed;
           }
+        }
+        .offerText {
+          font-size: 18px;
+          line-height: 26px;
         }
         .breadcrumb {
           ul {
+           
             li {
               &::after {
                 background-size: 15px 15px;
@@ -242,15 +323,19 @@
               }
             }
           }
-      }
+        }
       }
   }
     section.price_section {
       padding: 30px 0;
+      
       .price_content {
         h2 {
           font-size: 24px;
           margin-bottom: 20px;
+          span {
+            font-size: 24px;
+          }
         }
         p {
           font-size: 14px;
@@ -260,18 +345,21 @@
         }
       }
       .price_wrapper {
+          margin-top: 10px;
         .price_tab_content {
           padding: 30px 0 0 0;
         }
       }
     }
     section.trusted_section {
-      padding: 30px 0;
+      padding: 0 0 30px 0;
+      margin-bottom: 30px;
       h2 {
         font-size: 24px;
         margin-bottom: 20px;
       }
       ul {
+        display:none;
         li {
           img {
             height: 20px;
@@ -279,30 +367,43 @@
         }
       }
     }
-    section.faq_section {
-      padding-bottom: 30px;
-      h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      .faq_wrapper {
-        .accordion-item {
-          h2.accordion-header {
-            button.accordion-button {
-              font-size: 14px;
-              padding: 12px 15px;
-            }
-          }
-          .accordion-collapse {
-            .accordion-body {
-              font-size: 14px;
-              line-height: 20px;
-            }
-        }
-        }
-    }
-    }
+    // section.faq_section {
+    //   padding-bottom: 30px;
+    //   h2 {
+    //     font-size: 24px;
+    //     margin-bottom: 20px;
+    //   }
+    //   .faq_wrapper {
+    //     .accordion-item {
+    //       h2.accordion-header {
+    //         button.accordion-button {
+    //           font-size: 14px;
+    //           padding: 12px 15px;
+    //         }
+    //       }
+    //       .accordion-collapse {
+    //         .accordion-body {
+    //           font-size: 14px;
+    //           line-height: 20px;
+    //         }
+    //     }
+    //     }
+    // }
+    // }
   }
+  
+  .logoSwiper
+  {
+    display:block;
+    border-top: 1px solid rgba(15, 9, 27, 0.12);
+    border-bottom: 1px solid rgba(15, 9, 27, 0.12);
+    padding:24px 0px;
+  }
+  .logoSwiper .swiper-wrapper {
+    
+    justify-content: center;
+    align-items: center;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -326,6 +427,39 @@
     .price_block {
       max-width: 90%;
       margin:  15px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .PricePage {
+    .priceBanner {
+      padding: 100px 0 60px 0;
+      .priceBannerContent {
+        .breadcrumb {
+          display:none;
+          margin-bottom: 10px;
+        }
+        h1 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          span {
+            font-size: 28px !important;
+          }
+        }
+        
+        button.btn-btnSecondary {
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 6px;
+          padding: 12px 18px;
+          width:100%;
+        }
+      
+      }
+    }
+    section.price_section {
+      padding: 0 0 30px 0;
     }
   }
 }

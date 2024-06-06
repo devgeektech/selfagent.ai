@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import deanLogo from "../../assets/images/dean-logo.png";
 import EstateSkillslogo from "../../assets/images/Estate-Skills-logo.png";
 import BallpointMarketing from "../../assets/images/Ballpoint-marketing.png";
@@ -34,35 +34,75 @@ import {
 // import Monthlytab from "@/components/monthlytab";
 import Yearlytab from "@/components/yearlytab";
 import Monthlytabs from "@/components/monthlyTabs";
+import Header from "@/components/header";
+import ArrowIcon from "../icons/ArrowIcon";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-export default function Pricing() {
+
+
+
+
+export default function Pricing(){
+  
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(()=>{AOS.init({disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    useClassNames: true,
+    disableMutationObserver: false,
+    debounceDelay: 50,
+    throttleDelay: 99,
+    offset: 120,
+    delay: 0,
+    duration: 500,
+    easing: 'linear',
+    once: true,
+    mirror: false,
+    
+  });
+
+  },[])
+
+  
   return (
     <>
+      {/* <Header/> */}
       <div className="PricePage">
         {/* banner Html start  */}
         <div className="priceBanner">
           <div className="container">
             <div className="col-sm-12">
               <div className="priceBannerContent">
-                <h1>
-                  Get started for free We offer non-branded solution for
-                  Enterprises and Agencies. For more detail please
-                  <button onClick={handleShow}>
-                    <span>Contact Us</span>
-                  </button>
-                </h1>
+             
                 <div className="breadcrumb">
                   <ul>
-                    <li>
+                    <li data-aos="fade-right" data-aos-duration="500">
                       <Link href={"/"}>Home</Link>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-duration="500">
                       <span>Pricing Plans</span>
                     </li>
                   </ul>
+                </div>
+              
+              
+                <h1 className="text-center" data-aos="fade-down" data-aos-duration="500">
+                  Get started for <span>free </span>
+                  {/* <button onClick={handleShow}>
+                    <span>Contact Us</span>
+                  </button> */}
+                </h1>
+             
+              <p data-aos="slide-up" data-aos-duration="1000" className="text-center offerText">We offer non-branded solution for Enterprises and Agencies. For more detail please</p>
+               <div className="d-flex justify-content-center">
+                 <button className="btn-btnSecondary" data-aos="fade-right" data-aos-duration="500" onClick={handleShow}>
+                    Contact Us<ArrowIcon/>
+                  </button>
                 </div>
               </div>
             </div>
@@ -75,20 +115,16 @@ export default function Pricing() {
             <div className="row">
               <div className="col-sm-12">
                 <div className="price_content text-center">
-                  <h2>
-                    Pricing plans for teams
+                 <h2 data-aos="fade-right" data-aos-duration="500"><span>Pricing plans</span> for teams
                     <br /> of all sizes
                   </h2>
-                  <p>
-                    Shopify websites get 50% off for the next 30 days for all
-                    tiers! (purchased through Shopify store)
-                    <br /> All tiers get 3 months free when paid annually.
-                  </p>
+                 <p data-aos="fade-left" data-aos-duration="500">Choose an affordable plan that’s packed with the best features for engaging your audience.</p>
                 </div>
               </div>
               <div className="col-sm-12">
-                <div className="price_wrapper">
-                  <Tab.Container
+             
+                <div className="price_wrapper" >
+                  <Tab.Container 
                     id="left-tabs-example"
                     defaultActiveKey="monthly"
                   >
@@ -96,16 +132,18 @@ export default function Pricing() {
                       <Col sm={12}>
                         <div className="price_tab_buttons d-flex justify-content-center align-items-center">
                           <Nav variant="pills">
-                            <Nav.Item>
-                              <Nav.Link eventKey="monthly">Monthly </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                              <Nav.Link eventKey="yearly">Yearly</Nav.Link>
-                              <span className="disPer">
-                                <Image src={arrowAngle} alt="arrowAngle" />
-                                Save 20% OFF
-                              </span>
-                            </Nav.Item>
+                            <div className="pillsWrap" data-aos="zoom-in" data-aos-duration="500">
+                              <Nav.Item>
+                                <Nav.Link eventKey="monthly">Monthly </Nav.Link>
+                              </Nav.Item>
+                              <Nav.Item>
+                                <Nav.Link eventKey="yearly">Yearly</Nav.Link>
+                                {/* <span className="disPer">
+                                  <Image src={arrowAngle} alt="arrowAngle" />
+                                  Save 20% OFF
+                                </span> */}
+                              </Nav.Item>
+                            </div>
                           </Nav>
                         </div>
                       </Col>
@@ -124,6 +162,7 @@ export default function Pricing() {
                     </Row>
                   </Tab.Container>
                 </div>
+               
               </div>
             </div>
           </div>
@@ -134,8 +173,10 @@ export default function Pricing() {
           <div className="container">
             <div className="row">
               <div className="col-m-12">
-                <h2>Trusted By Industry Leaders</h2>
-                <ul>
+              <h2  data-aos="fade-right" data-aos-duration="500">Trusted By <span>Industry Leaders</span></h2>
+              
+               
+                <ul  data-aos="zoom-in" data-aos-duration="500">
                   <li>
                     <Image src={deanLogo} alt="dean-logo" />
                   </li>
@@ -152,13 +193,81 @@ export default function Pricing() {
                     <Image src={WholesalingIncLogo} alt="WholesalingIncLogo" />
                   </li>
                 </ul>
+              
+
+
+               
+                <Swiper
+                  modules={[Navigation, Autoplay]}
+                  slidesPerView={4}
+                  spaceBetween={20}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  className="logoSwiper"
+                  breakpoints={{
+                    // when window width is >= 100px
+                    100: {
+                      slidesPerView: 1.5,
+                    },
+                    // when window width is >= 575px
+                    575: {
+                      width: 575,
+                      slidesPerView: 2.5,
+                      spaceBetween: "10px",
+                    },
+                    // when window width is >= 768px
+                    768: {
+                      width: 768,
+                      slidesPerView: 2.5,
+                      spaceBetween: "10px",
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: "20px",
+                    },
+                    1920: {
+                      slidesPerView: 4,
+                      spaceBetween: "20px",
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={deanLogo} alt="yahoo" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={EstateSkillslogo} alt="bloomberg" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={BallpointMarketing} alt="forbes" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={deanLogo} alt="nbc" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiperSlide">
+                      <Image src={WholesalingIncLogo} alt="yahoo" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+            
               </div>
             </div>
           </div>
         </section>
         {/* trusted by html end */}
         {/* faq section html start */}
-        <section className="faq_section">
+        {/* <section className="faq_section">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
@@ -309,9 +418,9 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* faq section html end */}
-        <section className="slider_section">
+        {/* <section className="slider_section">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
@@ -516,7 +625,7 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       {/* Modal Start */}
       <Modal show={show} onHide={handleClose} centered className="contactusModal">

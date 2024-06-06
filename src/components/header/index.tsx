@@ -2,8 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import "./style.scss";
-import logo from "../../assets/images/logo.svg";
-import loginIcon from "../../assets/images/loginIcon.svg";
+import logo from "../../assets/images/logo.png";
 // import Signin from "../signin";
 import {
   Button,
@@ -15,7 +14,8 @@ import {
 } from "react-bootstrap";
 import Signin from "../signin";
 import Resetpassword from "../resetpassword";
-
+import LoginIcon from "@/app/icons/loginIcon";
+import ArrowIcon from "@/app/icons/ArrowIcon";
 function Header() {
   /* signin state */
   const [signIn, setSignIn] = useState(false);
@@ -34,19 +34,19 @@ const openReset=()=>{
 
   return (
     <>
-      <header className="header">
+      <header className="header animate__animated animate__bounce">
         <Navbar expand="lg" className="bg-white">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href={"/"}>
               <Image src={logo} alt="logo" />
-            </Navbar.Brand>
+           </Navbar.Brand >
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="my-2 my-lg-0" navbarScroll>
                 <Nav.Link href="#action1">Affiliates</Nav.Link>
-                <Nav.Link href="#action1">Pricing</Nav.Link>
-                <NavDropdown title="Resources" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">
+                <Nav.Link href="/pricing">Pricing</Nav.Link>
+                <NavDropdown title="Resources" id="navbarScrollingDropdown" >
+                  <NavDropdown.Item href="#action3" >
                     Resources 1
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
@@ -57,14 +57,14 @@ const openReset=()=>{
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-              <div className="btns_wrap">
-                <Button variant="btnSecondary" 
+              <div className="btns_wrap" >
+                <Button  variant="btnSecondary" 
                 // onClick={signfun}
                 href="/signIn"
                 >
-                  Sign In <Image src={loginIcon} alt='loginIcon'/>
+                  Sign In <LoginIcon/>
                 </Button>
-                <Button className="btnprimary">Try for Free</Button>
+                <Button className="btnprimary">Try for Free <ArrowIcon/></Button>
               </div>
             </Navbar.Collapse>
               <div className="btns_wrap">
@@ -72,9 +72,9 @@ const openReset=()=>{
                 // onClick={signfun}
                 href="/signIn"
                 >
-                  Sign In <Image src={loginIcon} alt='loginIcon'/>
+                  Sign In <LoginIcon/>
                 </Button>
-                <Button className="btnprimary">Try for Free</Button>
+                <Button className="btnprimary">Try for Free  <ArrowIcon/></Button>
               </div>
           </Container>
         </Navbar>
