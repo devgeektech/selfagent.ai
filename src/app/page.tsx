@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import arrowRightWhiteIcon from "../assets/images/arrowRightWhiteIcon.svg";
 import playBtnIcon from "../assets/images/playBtnIcon.svg";
 import arrowRight from "../assets/images/arrowRight.svg";
-import bannerVideo from "../assets/images/bannerVideo.png";
+import videoFrame from "../assets/images/videoFrame.png";
 import blockOne from "../assets/images/blockOne.png";
 import blockTwo from "../assets/images/blockTwo.png";
 import blockThree from "../assets/images/blockThree.png";
@@ -135,8 +135,8 @@ export default function () {
                 
                   <Image
                     className="h-auto"
-                    src={bannerVideo}
-                    alt="bannerVideo"
+                    src={videoFrame}
+                    alt="videoFrame"
                   />
                
               </div>
