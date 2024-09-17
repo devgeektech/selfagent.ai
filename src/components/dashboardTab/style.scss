@@ -75,13 +75,14 @@
         align-items: center;
         padding: 12px 25px 12px 25px;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 17px;
         letter-spacing: 0em;
         text-align: center;
         border: none;
         border-radius: 6px;
         gap: 10px;
+        font-family: "Geliat-Medium";
         &::after {
           display: none;
         }
@@ -168,7 +169,8 @@
     }
     button.btnprimary {
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
+      font-family: "Geliat-Medium";
       line-height: 17px;
       letter-spacing: 0em;
       text-align: center;
@@ -234,7 +236,8 @@ footer.footer {
         border: none;
         padding: 8px 15px;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: "Geliat-Medium";
         line-height: 17px;
         letter-spacing: 0em;
       }
@@ -767,7 +770,8 @@ footer.footer {
         border-radius: 6px;
         margin: 0;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: "Geliat-Medium";
         line-height: 17px;
         letter-spacing: 0em;
         text-align: center;

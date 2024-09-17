@@ -104,7 +104,7 @@ export default function () {
                 {/* <h1>Smart AI Agent for your website</h1> */}
                
                <h1 data-aos="fade-down" data-aos-duration="500" >
-                    Empower visitors with <span>SiteAgent's voice AI</span> to
+                    Empower visitors with <br/><span>SiteAgent's voice AI</span> to
                     find what they need
                   </h1>
                 {/* <h5>

@@ -1,6 +1,3 @@
-// .homePage {
-//   background-image: url('../assets/images/bannerBg.png');
-// }
 section.smartAi_section {
   padding: 230px 0 40px 0;
   background-image: url("../assets/images/bannerBg.png");
@@ -8,11 +5,11 @@ section.smartAi_section {
   background-size: 100% 100%;
   h1 {
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 88px;
     letter-spacing: 0em;
     color: #fff;
-    font-family: "Geliat-Semibold";
+    font-family: "Geliat-Medium";
     padding:0px 15px;
 
     span {
@@ -50,7 +47,7 @@ section.smartAi_section {
     padding: 14px 25px;
     margin-right: 24px;
     border: none;
-    font-family: "Geliat-Medium";
+    font-family: "Geliat-Regular";
   }
   .btndefault.chatbotBtn {
     color: #FFFFFF;
@@ -145,7 +142,7 @@ section.affiliate_section {
       h2 {
         font-size: 36px;
         line-height: 43px;
-        font-family: "Geliat-Semibold";
+        font-family: "Geliat-Medium";
         color: #0F091B;
         padding-bottom: 70px;
         margin-bottom: 0px;
@@ -171,7 +168,7 @@ section.affiliate_section {
     //   label.form-label {
     //     color: #000;
     //     font-size: 20px;
-    //     font-family: "Inter-Medium";
+    //     font-family: "Geliat-Medium";
     //   }
     //   input.form-control {
     //     background: #f9f9f9;
@@ -375,9 +372,9 @@ section.pwerful_feature_section, section.safetyWrapper {
   h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
-    font-family: "Geliat-Semibold";
+    font-family: "Geliat-Medium";
     span {
       font-family: "Geliat-Semibold";
       font-size: 24px;
@@ -442,9 +439,9 @@ section.pwerful_feature_section, section.safetyWrapper {
         }
       }
       h4 {
-        font-family: "Geliat-Semibold";
+        font-family: "Geliat-Medium";
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 24px;
         letter-spacing: 0em;
         color: #000000;
@@ -527,8 +524,9 @@ section.useCases_section {
         h3 {
           margin-bottom: 16px;
           color: #fff;
+          font-family: "Geliat-Medium";
           span {
-            font-family: "Geliat-Bold";
+            font-family: "Geliat-semibold";
             font-size: 24px;
             font-weight: 700;
             line-height: 30px;
@@ -592,7 +590,7 @@ section.website__gradient_section {
     background-repeat: no-repeat;
     background-position: left bottom;
     h5 {
-      font-family: "Geliat-Regular";
+      font-family: "Geliat-ExtraLight";
       font-size: 20px;
       font-weight: 400;
       line-height: 32px;

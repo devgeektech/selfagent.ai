@@ -51,9 +51,10 @@ footer.footer {
         border: none;
         padding: 8px 15px;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 17px;
         letter-spacing: 0em;
+        font-family: "Geliat-Medium";
       }
     }
     .leftTabsWrapper {
@@ -97,7 +98,7 @@ footer.footer {
             }
           }
           h3 {
-            font-family: "Inter-Medium";
+            font-family: "Geliat-Medium";
             font-size: 16px;
             font-weight: 500;
             line-height: 19px;
@@ -276,11 +277,12 @@ footer.footer {
             button.btnprimary {
               padding: 8px 25px;
               font-size: 14px;
-              font-weight: 600;
+              font-weight: 500;
               line-height: 16px;
               letter-spacing: 0em;
               text-align: center;
               border-radius: 6px;
+              font-family: "Geliat-Medium";
             }
             .inr-add-form {
               padding: 20px;
@@ -586,11 +588,12 @@ div[role="Connect Notion"] {
       border-radius: 6px;
       margin: 0;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 17px;
       letter-spacing: 0em;
       text-align: center;
       padding: 10px 25px;
+      font-family: "Geliat-Medium";
     }
   }
 }

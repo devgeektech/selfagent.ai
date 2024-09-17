@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import bannerVideo from "../../assets/images/bannerVideo.jpg";
+import videoFrame from "../../assets/images/videoFrame.png";
 import userIcon from "../../assets/images/userIcon.png";
 import userIcon_2 from "../../assets/images/userIcon_2.png";
 import userIcon_3 from "../../assets/images/userIcon_3.png";
@@ -62,7 +62,7 @@ export default function About() {
             </div>
             <div className="col-md-6">
               <div className="imgfull">
-                <Image className="w-100 h-auto" src={bannerVideo} alt='bannerVideo'/>
+                <Image className="w-100 h-auto" src={videoFrame} alt='videoFrame'/>
               </div>
             </div>
           </div>
